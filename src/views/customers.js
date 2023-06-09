@@ -14,7 +14,7 @@ const Customers = (props) => {
         <meta property="og:title" content="Customers - Up2Data-Admin" />
       </Helmet>
       <div className="customers-container1">
-        <Menu></Menu>
+        <Menu menu_2={true}></Menu>
         <ContentComponent></ContentComponent>
       </div>
     </div>
