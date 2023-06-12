@@ -8,6 +8,7 @@ import Employees from './views/employees'
 import Dashboard from './views/dashboard'
 import CompanyOverview from './views/company-overview'
 import Login from './views/login'
+import Messages from './views/messages'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route component={Dashboard} exact path="/dashboard" />
         <Route component={CompanyOverview} exact path="/company-overview" />
         <Route component={Login} exact path="/" />
+        <Route component={Messages} exact path="/messages" />
       </div>
     </Router>
   )

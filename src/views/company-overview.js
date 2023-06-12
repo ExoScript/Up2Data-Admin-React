@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 
 import Menu from '../components/menu'
 import TopBar from '../components/top-bar'
-import CompanyOverviewComponent from '../components/company-overview-component'
+import CompanyProfileComponent from '../components/company-profile-component'
 import './company-overview.css'
 
 const CompanyOverview = (props) => {
@@ -32,7 +32,7 @@ const CompanyOverview = (props) => {
             </Link>
           </div>
           <div className="company-overview-container5">
-            <CompanyOverviewComponent></CompanyOverviewComponent>
+            <CompanyProfileComponent></CompanyProfileComponent>
           </div>
           <div className="company-overview-container6 border-top-1px"></div>
         </div>

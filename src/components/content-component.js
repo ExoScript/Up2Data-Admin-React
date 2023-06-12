@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
 import TopBar from './top-bar'
-import CompanyOverviewComponent from './company-overview-component'
+import CompanyProfileComponent from './company-profile-component'
 import MainComponent from './main-component'
 import './content-component.css'
 
@@ -29,7 +29,7 @@ const ContentComponent = (props) => {
       )}
       <div className="content-component-container3">
         {view === 'company' && (
-          <CompanyOverviewComponent></CompanyOverviewComponent>
+          <CompanyProfileComponent></CompanyProfileComponent>
         )}
         {view === 'customers' && (
           <MainComponent rootClassName="main-component-root-class-name1"></MainComponent>

@@ -57,20 +57,22 @@ const Menu = (props) => {
           <div className="menu-container08">
             {menu_2 && (
               <div className="menu-container09">
-                <div className="menu-btn-enable">
-                  <div className="menu-container11">
-                    <svg
-                      viewBox="0 0 1097.142857142857 1024"
-                      className="menu-icon04"
-                    >
-                      <path d="M338.857 512c-59.429 1.714-113.143 27.429-151.429 73.143h-76.571c-57.143 0-110.857-27.429-110.857-90.857 0-46.286-1.714-201.714 70.857-201.714 12 0 71.429 48.571 148.571 48.571 26.286 0 51.429-4.571 76-13.143-1.714 12.571-2.857 25.143-2.857 37.714 0 52 16.571 103.429 46.286 146.286zM950.857 876c0 92.571-61.143 148-152.571 148h-499.429c-91.429 0-152.571-55.429-152.571-148 0-129.143 30.286-327.429 197.714-327.429 19.429 0 90.286 79.429 204.571 79.429s185.143-79.429 204.571-79.429c167.429 0 197.714 198.286 197.714 327.429zM365.714 146.286c0 80.571-65.714 146.286-146.286 146.286s-146.286-65.714-146.286-146.286 65.714-146.286 146.286-146.286 146.286 65.714 146.286 146.286zM768 365.714c0 121.143-98.286 219.429-219.429 219.429s-219.429-98.286-219.429-219.429 98.286-219.429 219.429-219.429 219.429 98.286 219.429 219.429zM1097.143 494.286c0 63.429-53.714 90.857-110.857 90.857h-76.571c-38.286-45.714-92-71.429-151.429-73.143 29.714-42.857 46.286-94.286 46.286-146.286 0-12.571-1.143-25.143-2.857-37.714 24.571 8.571 49.714 13.143 76 13.143 77.143 0 136.571-48.571 148.571-48.571 72.571 0 70.857 155.429 70.857 201.714zM1024 146.286c0 80.571-65.714 146.286-146.286 146.286s-146.286-65.714-146.286-146.286 65.714-146.286 146.286-146.286 146.286 65.714 146.286 146.286z"></path>
+                <Link to="/customers" className="menu-navlink">
+                  <div className="menu-container10 menu-btn-enable">
+                    <div className="menu-container11">
+                      <svg
+                        viewBox="0 0 1097.142857142857 1024"
+                        className="menu-icon04"
+                      >
+                        <path d="M338.857 512c-59.429 1.714-113.143 27.429-151.429 73.143h-76.571c-57.143 0-110.857-27.429-110.857-90.857 0-46.286-1.714-201.714 70.857-201.714 12 0 71.429 48.571 148.571 48.571 26.286 0 51.429-4.571 76-13.143-1.714 12.571-2.857 25.143-2.857 37.714 0 52 16.571 103.429 46.286 146.286zM950.857 876c0 92.571-61.143 148-152.571 148h-499.429c-91.429 0-152.571-55.429-152.571-148 0-129.143 30.286-327.429 197.714-327.429 19.429 0 90.286 79.429 204.571 79.429s185.143-79.429 204.571-79.429c167.429 0 197.714 198.286 197.714 327.429zM365.714 146.286c0 80.571-65.714 146.286-146.286 146.286s-146.286-65.714-146.286-146.286 65.714-146.286 146.286-146.286 146.286 65.714 146.286 146.286zM768 365.714c0 121.143-98.286 219.429-219.429 219.429s-219.429-98.286-219.429-219.429 98.286-219.429 219.429-219.429 219.429 98.286 219.429 219.429zM1097.143 494.286c0 63.429-53.714 90.857-110.857 90.857h-76.571c-38.286-45.714-92-71.429-151.429-73.143 29.714-42.857 46.286-94.286 46.286-146.286 0-12.571-1.143-25.143-2.857-37.714 24.571 8.571 49.714 13.143 76 13.143 77.143 0 136.571-48.571 148.571-48.571 72.571 0 70.857 155.429 70.857 201.714zM1024 146.286c0 80.571-65.714 146.286-146.286 146.286s-146.286-65.714-146.286-146.286 65.714-146.286 146.286-146.286 146.286 65.714 146.286 146.286z"></path>
+                      </svg>
+                      <span className="menu-text05">{props.text5}</span>
+                    </div>
+                    <svg viewBox="0 0 1024 1024" className="menu-icon06">
+                      <path d="M316 366l196 196 196-196 60 60-256 256-256-256z"></path>
                     </svg>
-                    <span className="menu-text05">{props.text5}</span>
                   </div>
-                  <svg viewBox="0 0 1024 1024" className="menu-icon06">
-                    <path d="M316 366l196 196 196-196 60 60-256 256-256-256z"></path>
-                  </svg>
-                </div>
+                </Link>
                 <div className="menu-container12">
                   {menu_3 && (
                     <div className="menu-sub-btn-enable">
@@ -78,21 +80,21 @@ const Menu = (props) => {
                     </div>
                   )}
                   {!menu_3 && (
-                    <Link to="/company-overview" className="menu-navlink">
+                    <Link to="/company-overview" className="menu-navlink1">
                       <div className="menu-container14 menu-sub-btn-desable">
                         <span>Companies</span>
                       </div>
                     </Link>
                   )}
                   {menu_4 && (
-                    <Link to="/employees" className="menu-navlink1">
+                    <Link to="/employees" className="menu-navlink2">
                       <div className="menu-sub-btn-enable">
                         <span>Employees</span>
                       </div>
                     </Link>
                   )}
                   {!menu_4 && (
-                    <Link to="/employees" className="menu-navlink2">
+                    <Link to="/employees" className="menu-navlink3">
                       <div className="clickable menu-sub-btn-desable">
                         <span>Employees</span>
                       </div>
@@ -102,7 +104,7 @@ const Menu = (props) => {
               </div>
             )}
             {!menu_2 && (
-              <Link to="/customers" className="menu-navlink3">
+              <Link to="/customers" className="menu-navlink4">
                 <div className="menu-container17 menu-btn-disable">
                   <div className="menu-container18">
                     <svg
@@ -164,24 +166,26 @@ const Menu = (props) => {
               </div>
             )}
           </div>
-          <div className="menu-container25">
-            {menu_7 && (
-              <div className="menu-btn-enable clickable">
-                <svg viewBox="0 0 1024 1024" className="menu-icon22">
-                  <path d="M554 384h236l-236-234v234zM256 86h342l256 256v512q0 34-26 59t-60 25h-512q-34 0-60-25t-26-59l2-684q0-34 25-59t59-25z"></path>
-                </svg>
-                <span className="menu-text15">{props.text8}</span>
-              </div>
-            )}
-            {!menu_7 && (
-              <div className="menu-btn-disable clickable">
-                <svg viewBox="0 0 1024 1024" className="menu-icon24">
-                  <path d="M554 384h236l-236-234v234zM256 86h342l256 256v512q0 34-26 59t-60 25h-512q-34 0-60-25t-26-59l2-684q0-34 25-59t59-25z"></path>
-                </svg>
-                <span>{props.text81}</span>
-              </div>
-            )}
-          </div>
+          <Link to="/messages" className="menu-navlink5">
+            <div className="menu-container25">
+              {menu_7 && (
+                <div className="menu-btn-enable clickable">
+                  <svg viewBox="0 0 1024 1024" className="menu-icon22">
+                    <path d="M938.667 640v-426.667c0-35.328-14.379-67.413-37.504-90.496s-55.168-37.504-90.496-37.504h-597.333c-35.328 0-67.413 14.379-90.496 37.504s-37.504 55.168-37.504 90.496v682.667c0 10.923 4.181 21.845 12.501 30.165 16.683 16.683 43.691 16.683 60.331 0l158.165-158.165h494.336c35.328 0 67.413-14.379 90.496-37.504s37.504-55.168 37.504-90.496zM853.333 640c0 11.776-4.736 22.4-12.501 30.165s-18.389 12.501-30.165 12.501h-512c-11.776 0-22.443 4.779-30.165 12.501l-97.835 97.835v-579.669c0-11.776 4.736-22.4 12.501-30.165s18.389-12.501 30.165-12.501h597.333c11.776 0 22.4 4.736 30.165 12.501s12.501 18.389 12.501 30.165z"></path>
+                  </svg>
+                  <span className="menu-text15">{props.menu_7}</span>
+                </div>
+              )}
+              {!menu_7 && (
+                <div className="menu-btn-disable clickable">
+                  <svg viewBox="0 0 1024 1024" className="menu-icon24">
+                    <path d="M938.667 640v-426.667c0-35.328-14.379-67.413-37.504-90.496s-55.168-37.504-90.496-37.504h-597.333c-35.328 0-67.413 14.379-90.496 37.504s-37.504 55.168-37.504 90.496v682.667c0 10.923 4.181 21.845 12.501 30.165 16.683 16.683 43.691 16.683 60.331 0l158.165-158.165h494.336c35.328 0 67.413-14.379 90.496-37.504s37.504-55.168 37.504-90.496zM853.333 640c0 11.776-4.736 22.4-12.501 30.165s-18.389 12.501-30.165 12.501h-512c-11.776 0-22.443 4.779-30.165 12.501l-97.835 97.835v-579.669c0-11.776 4.736-22.4 12.501-30.165s18.389-12.501 30.165-12.501h597.333c11.776 0 22.4 4.736 30.165 12.501s12.501 18.389 12.501 30.165z"></path>
+                  </svg>
+                  <span>{props.menu_7}</span>
+                </div>
+              )}
+            </div>
+          </Link>
           <div className="menu-container28">
             {menu_8 && (
               <div className="menu-btn-enable clickable">
@@ -221,7 +225,7 @@ const Menu = (props) => {
         </div>
       </div>
       <div className="menu-container34 border-top-1px">
-        <Link to="/" className="menu-navlink4">
+        <Link to="/" className="menu-navlink6">
           <div className="menu-container35 clickable">
             <svg viewBox="0 0 1024 1024" className="menu-icon34">
               <path d="M170 214v596h342v86h-342q-34 0-59-26t-25-60v-596q0-34 25-60t59-26h342v86h-342zM726 298l212 214-212 214-60-62 110-110h-434v-84h434l-110-112z"></path>
@@ -235,7 +239,6 @@ const Menu = (props) => {
 }
 
 Menu.defaultProps = {
-  text8: 'Files',
   text9: 'Reports',
   text2: 'Admin',
   text6: 'Import & Export',
@@ -243,7 +246,6 @@ Menu.defaultProps = {
   text5: 'Customers',
   text7: 'Onboarding',
   text41: 'Overview',
-  text53: 'Customers',
   image_alt: 'image',
   text91: 'Reports',
   text71: 'Onboarding',
@@ -253,15 +255,12 @@ Menu.defaultProps = {
   text61: 'Import & Export',
   text1: 'Up2Data',
   image_src: '/u2d-chrome-logo-200h.png',
-  text51: 'Customers',
   text3: 'Menu',
   text101: 'Settings',
-  text81: 'Files',
-  text511: 'Customers',
+  menu_7: 'Messages',
 }
 
 Menu.propTypes = {
-  text8: PropTypes.string,
   text9: PropTypes.string,
   text2: PropTypes.string,
   text6: PropTypes.string,
@@ -269,7 +268,6 @@ Menu.propTypes = {
   text5: PropTypes.string,
   text7: PropTypes.string,
   text41: PropTypes.string,
-  text53: PropTypes.string,
   image_alt: PropTypes.string,
   text91: PropTypes.string,
   text71: PropTypes.string,
@@ -279,11 +277,9 @@ Menu.propTypes = {
   text61: PropTypes.string,
   text1: PropTypes.string,
   image_src: PropTypes.string,
-  text51: PropTypes.string,
   text3: PropTypes.string,
   text101: PropTypes.string,
-  text81: PropTypes.string,
-  text511: PropTypes.string,
+  menu_7: PropTypes.string,
 }
 
 export default Menu
