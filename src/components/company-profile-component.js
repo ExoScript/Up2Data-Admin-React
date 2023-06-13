@@ -196,64 +196,77 @@ const CompanyProfileComponent = (props) => {
               <span>{props.menu_3}</span>
             </div>
           )}
-          {menu_4 && (
-            <div className="company-profile-component-container038 profile_menu_btn_enable border-bottom-1px clickable">
+          {!menu_4 && (
+            <div
+              onClick={() => {
+                setMenu_1(false)
+                setMenu_2(false)
+                setMenu_3(false)
+                setMenu_4(true)
+              }}
+              className="company-profile-component-container038 profile_menu_btn_disable border-bottom-1px clickable"
+            >
               <span>{props.menu_4}</span>
             </div>
           )}
-          <div className="company-profile-component-container039 border-bottom-1px"></div>
+          {menu_4 && (
+            <div className="company-profile-component-container039 profile_menu_btn_enable border-bottom-1px clickable">
+              <span>{props.menu_4}</span>
+            </div>
+          )}
+          <div className="company-profile-component-container040 border-bottom-1px"></div>
         </div>
         {menu_1 && (
           <div className="company-profile-component-details-component">
-            <div className="company-profile-component-container040">
-              <div className="company-profile-component-container041 content-box">
-                <div className="company-profile-component-container042 border-bottom-1px">
-                  <span className="company-profile-component-text021 txt-opacity">
+            <div className="company-profile-component-container041">
+              <div className="company-profile-component-container042 content-box">
+                <div className="company-profile-component-container043 border-bottom-1px">
+                  <span className="company-profile-component-text022 txt-opacity">
                     Details
                   </span>
                 </div>
-                <div className="company-profile-component-container043">
-                  <div className="company-profile-component-container044">
-                    <span className="company-profile-component-text022 txt-opacity">
+                <div className="company-profile-component-container044">
+                  <div className="company-profile-component-container045">
+                    <span className="company-profile-component-text023 txt-opacity">
                       Total contacts
                     </span>
-                    <span className="company-profile-component-text023">
+                    <span className="company-profile-component-text024">
                       3879
                     </span>
                   </div>
-                  <div className="company-profile-component-container045">
-                    <span className="company-profile-component-text024 txt-opacity">
+                  <div className="company-profile-component-container046">
+                    <span className="company-profile-component-text025 txt-opacity">
                       Under observation
                     </span>
-                    <span className="company-profile-component-text025">
+                    <span className="company-profile-component-text026">
                       153
                     </span>
                   </div>
-                  <div className="company-profile-component-container046">
-                    <span className="company-profile-component-text026 txt-opacity">
+                  <div className="company-profile-component-container047">
+                    <span className="company-profile-component-text027 txt-opacity">
                       Number of monitors
                     </span>
-                    <span className="company-profile-component-text027">
+                    <span className="company-profile-component-text028">
                       13
                     </span>
                   </div>
                 </div>
               </div>
-              <div className="company-profile-component-container047 content-box">
-                <div className="company-profile-component-container048 border-bottom-1px">
-                  <span className="company-profile-component-text028 txt-opacity">
+              <div className="company-profile-component-container048 content-box">
+                <div className="company-profile-component-container049 border-bottom-1px">
+                  <span className="company-profile-component-text029 txt-opacity">
                     Activity
                   </span>
                 </div>
               </div>
             </div>
-            <div className="company-profile-component-container049 content-box">
+            <div className="company-profile-component-container050 content-box">
               <div className="content-box-topBar">
                 <span>Overview</span>
               </div>
-              <div className="company-profile-component-container051">
-                <div className="company-profile-component-container052">
-                  <span className="company-profile-component-text030 txt-opacity">
+              <div className="company-profile-component-container052">
+                <div className="company-profile-component-container053">
+                  <span className="company-profile-component-text031 txt-opacity">
                     <span>
                       Driven by a purpose: heyData is a fast-growing
                       Berlin-based Compliance Software-as-a-Service company that
@@ -286,10 +299,10 @@ const CompanyProfileComponent = (props) => {
                     </span>
                   </span>
                 </div>
-                <div className="company-profile-component-container053"></div>
-                <div className="company-profile-component-container054">
-                  <div className="company-profile-component-container055">
-                    <span className="company-profile-component-text040">
+                <div className="company-profile-component-container054"></div>
+                <div className="company-profile-component-container055">
+                  <div className="company-profile-component-container056">
+                    <span className="company-profile-component-text041">
                       Preference
                     </span>
                     <svg
@@ -299,17 +312,17 @@ const CompanyProfileComponent = (props) => {
                       <path d="M884 300l-78 78-160-160 78-78q12-12 30-12t30 12l100 100q12 12 12 30t-12 30zM128 736l472-472 160 160-472 472h-160v-160z"></path>
                     </svg>
                   </div>
-                  <div className="company-profile-component-container056">
+                  <div className="company-profile-component-container057">
                     <InfoIcon></InfoIcon>
                     <InfoIcon txt="Marketing"></InfoIcon>
                     <InfoIcon txt="Finance"></InfoIcon>
                     <InfoIcon txt="HR"></InfoIcon>
                   </div>
                 </div>
-                <div className="company-profile-component-container057"></div>
-                <div className="company-profile-component-container058">
-                  <div className="company-profile-component-container059">
-                    <span className="company-profile-component-text041">
+                <div className="company-profile-component-container058"></div>
+                <div className="company-profile-component-container059">
+                  <div className="company-profile-component-container060">
+                    <span className="company-profile-component-text042">
                       Language
                     </span>
                     <svg
@@ -319,15 +332,15 @@ const CompanyProfileComponent = (props) => {
                       <path d="M884 300l-78 78-160-160 78-78q12-12 30-12t30 12l100 100q12 12 12 30t-12 30zM128 736l472-472 160 160-472 472h-160v-160z"></path>
                     </svg>
                   </div>
-                  <div className="company-profile-component-container060">
+                  <div className="company-profile-component-container061">
                     <InfoIcon txt="English"></InfoIcon>
                     <InfoIcon txt="Germany"></InfoIcon>
                   </div>
                 </div>
-                <div className="company-profile-component-container061"></div>
-                <div className="company-profile-component-container062">
-                  <div className="company-profile-component-container063">
-                    <span className="company-profile-component-text042">
+                <div className="company-profile-component-container062"></div>
+                <div className="company-profile-component-container063">
+                  <div className="company-profile-component-container064">
+                    <span className="company-profile-component-text043">
                       Web presentation
                     </span>
                     <svg
@@ -337,7 +350,7 @@ const CompanyProfileComponent = (props) => {
                       <path d="M884 300l-78 78-160-160 78-78q12-12 30-12t30 12l100 100q12 12 12 30t-12 30zM128 736l472-472 160 160-472 472h-160v-160z"></path>
                     </svg>
                   </div>
-                  <div className="company-profile-component-container064">
+                  <div className="company-profile-component-container065">
                     <InfoIcon txt="Website"></InfoIcon>
                     <InfoIcon txt="LinkedIn"></InfoIcon>
                     <InfoIcon txt="Instagram"></InfoIcon>
@@ -345,10 +358,10 @@ const CompanyProfileComponent = (props) => {
                 </div>
               </div>
             </div>
-            <div className="company-profile-component-container065 content-box">
-              <div className="company-profile-component-container066 grad-bg border-bottom-1px shadow-bottom">
+            <div className="company-profile-component-container066 content-box">
+              <div className="company-profile-component-container067 grad-bg border-bottom-1px shadow-bottom">
                 <span>Responsible contact</span>
-                <div className="company-profile-component-container067">
+                <div className="company-profile-component-container068">
                   <svg
                     viewBox="0 0 1024 1024"
                     className="company-profile-component-icon18 btn-icon"
@@ -357,49 +370,49 @@ const CompanyProfileComponent = (props) => {
                   </svg>
                 </div>
               </div>
-              <div className="company-profile-component-container068">
-                <div className="company-profile-component-container069">
-                  <div className="company-profile-component-container070">
+              <div className="company-profile-component-container069">
+                <div className="company-profile-component-container070">
+                  <div className="company-profile-component-container071">
                     <img
                       alt="image"
                       src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDF8fHVzZXJ8ZW58MHx8fHwxNjg2MjUxMjc0fDA&amp;ixlib=rb-4.0.3&amp;w=200"
                       className="company-profile-component-image1"
                     />
                   </div>
-                  <div className="company-profile-component-container071">
-                    <span className="company-profile-component-text044">
+                  <div className="company-profile-component-container072">
+                    <span className="company-profile-component-text045">
                       Christian Reichwald
                     </span>
-                    <div className="company-profile-component-container072">
-                      <span className="company-profile-component-text045">
+                    <div className="company-profile-component-container073">
+                      <span className="company-profile-component-text046">
                         Co-Founder
                       </span>
                     </div>
                   </div>
                 </div>
                 <div className="underline"></div>
-                <div className="company-profile-component-container074">
-                  <div className="company-profile-component-container075">
-                    <div className="company-profile-component-container076 border-bottom-1px">
-                      <span className="company-profile-component-text046 txt-opacity">
+                <div className="company-profile-component-container075">
+                  <div className="company-profile-component-container076">
+                    <div className="company-profile-component-container077 border-bottom-1px">
+                      <span className="company-profile-component-text047 txt-opacity">
                         Phone number
                       </span>
                       <span>030 3876523</span>
                     </div>
-                    <div className="company-profile-component-container077 border-bottom-1px">
-                      <span className="company-profile-component-text048 txt-opacity">
+                    <div className="company-profile-component-container078 border-bottom-1px">
+                      <span className="company-profile-component-text049 txt-opacity">
                         Email address
                       </span>
                       <span>christia@heydata.eu</span>
                     </div>
-                    <div className="company-profile-component-container078">
-                      <span className="company-profile-component-text050 txt-opacity">
+                    <div className="company-profile-component-container079">
+                      <span className="company-profile-component-text051 txt-opacity">
                         In the company since
                       </span>
                       <span>1 Year, 6 Month</span>
                     </div>
                   </div>
-                  <div className="company-profile-component-container079">
+                  <div className="company-profile-component-container080">
                     <div className="btn-lila">
                       <svg viewBox="0 0 1024 1024" className="btn-icon">
                         <path d="M938.667 640v-426.667c0-35.328-14.379-67.413-37.504-90.496s-55.168-37.504-90.496-37.504h-597.333c-35.328 0-67.413 14.379-90.496 37.504s-37.504 55.168-37.504 90.496v682.667c0 10.923 4.181 21.845 12.501 30.165 16.683 16.683 43.691 16.683 60.331 0l158.165-158.165h494.336c35.328 0 67.413-14.379 90.496-37.504s37.504-55.168 37.504-90.496zM853.333 640c0 11.776-4.736 22.4-12.501 30.165s-18.389 12.501-30.165 12.501h-512c-11.776 0-22.443 4.779-30.165 12.501l-97.835 97.835v-579.669c0-11.776 4.736-22.4 12.501-30.165s18.389-12.501 30.165-12.501h597.333c11.776 0 22.4 4.736 30.165 12.501s12.501 18.389 12.501 30.165z"></path>
@@ -421,153 +434,17 @@ const CompanyProfileComponent = (props) => {
             </div>
           </div>
         )}
-        {menu_4 && (
-          <div className="company-profile-component-settings-component">
-            <div className="company-profile-component-container081 content-box">
-              <div className="company-profile-component-container082 border-bottom-1px">
-                <span className="company-profile-component-text054">
-                  Preference
-                </span>
-              </div>
-              <div className="company-profile-component-container083">
-                <div className="company-profile-component-container084">
-                  <span className="company-profile-component-text055 txt-opacity">
-                    Heare you can change the email address
-                  </span>
-                  <div className="company-profile-component-container085">
-                    <span className="company-profile-component-text056">
-                      Email Address
-                    </span>
-                    <div className="company-profile-component-container086">
-                      <input
-                        type="text"
-                        value="info@heydata.eu"
-                        placeholder="placeholder"
-                        className="company-profile-component-textinput input"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="company-profile-component-container087"></div>
-                <div className="company-profile-component-container088">
-                  <span className="company-profile-component-text057">
-                    Preference
-                  </span>
-                  <div className="company-profile-component-container089">
-                    <div className="company-profile-component-container090">
-                      <span className="company-profile-component-text058">
-                        Sales
-                      </span>
-                    </div>
-                    <div className="company-profile-component-container091">
-                      <span className="company-profile-component-text059">
-                        Marketing
-                      </span>
-                    </div>
-                    <div className="company-profile-component-container092">
-                      <span className="company-profile-component-text060">
-                        Finance
-                      </span>
-                    </div>
-                    <div className="company-profile-component-container093">
-                      <span className="company-profile-component-text061">
-                        HR
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div className="company-profile-component-container094"></div>
-                <div className="company-profile-component-container095">
-                  <span className="company-profile-component-text062">
-                    Language
-                  </span>
-                  <div className="company-profile-component-container096">
-                    <div className="company-profile-component-container097">
-                      <span className="company-profile-component-text063">
-                        English
-                      </span>
-                    </div>
-                    <div className="company-profile-component-container098">
-                      <span className="company-profile-component-text064">
-                        Germany
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="company-profile-component-container099 content-box">
-              <div className="company-profile-component-container100 grad-bg border-bottom-1px shadow-bottom">
-                <span className="company-profile-component-text065">
-                  Responsible contact
-                </span>
-              </div>
-              <div className="company-profile-component-container101">
-                <div className="company-profile-component-container102">
-                  <div className="company-profile-component-container103">
-                    <img
-                      alt="image"
-                      src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDF8fHVzZXJ8ZW58MHx8fHwxNjg2MjUxMjc0fDA&amp;ixlib=rb-4.0.3&amp;w=200"
-                      className="company-profile-component-image2"
-                    />
-                  </div>
-                  <div className="company-profile-component-container104">
-                    <span className="company-profile-component-text066">
-                      Christian Reichwald
-                    </span>
-                    <span className="company-profile-component-text067 txt-opacity">
-                      Co-Founder
-                    </span>
-                  </div>
-                </div>
-                <div className="underline"></div>
-                <div className="company-profile-component-container106">
-                  <div className="company-profile-component-container107">
-                    <span className="company-profile-component-text068 txt-opacity">
-                      Phone number
-                    </span>
-                    <span>030 3876523</span>
-                  </div>
-                  <div className="company-profile-component-container108">
-                    <span className="company-profile-component-text070 txt-opacity">
-                      Email address
-                    </span>
-                    <span>christia@heydata.eu</span>
-                  </div>
-                  <div className="company-profile-component-container109">
-                    <span className="company-profile-component-text072 txt-opacity">
-                      In the company since
-                    </span>
-                    <span>1 Year, 6 Month</span>
-                  </div>
-                </div>
-                <div className="company-profile-component-container110 clickable">
-                  <svg
-                    viewBox="0 0 877.7142857142857 1024"
-                    className="company-profile-component-icon24"
-                  >
-                    <path d="M686.286 448c80.571 23.429 191.429 102.857 191.429 362.857 0 117.714-87.429 213.143-194.857 213.143h-488c-107.429 0-194.857-95.429-194.857-213.143 0-260 110.857-339.429 191.429-362.857-28.571-45.143-45.143-98.286-45.143-155.429 0-161.143 131.429-292.571 292.571-292.571s292.571 131.429 292.571 292.571c0 57.143-16.571 110.286-45.143 155.429zM438.857 73.143c-121.143 0-219.429 98.286-219.429 219.429s98.286 219.429 219.429 219.429 219.429-98.286 219.429-219.429-98.286-219.429-219.429-219.429zM682.857 950.857c66.857 0 121.714-62.286 121.714-140 0-180-60.571-292.571-173.714-298.286-51.429 45.143-118.286 72.571-192 72.571s-140.571-27.429-192-72.571c-113.143 5.714-173.714 118.286-173.714 298.286 0 77.714 54.857 140 121.714 140h488z"></path>
-                  </svg>
-                  <span className="company-profile-component-text074">
-                    {' '}
-                    Profile
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
         {menu_2 && (
           <div className="company-profile-component-menu2">
-            <div className="company-profile-component-container111">
-              <div className="company-profile-component-container112">
+            <div className="company-profile-component-container082">
+              <div className="company-profile-component-container083">
                 <div className="company-profile-component-dropdown">
-                  <div className="company-profile-component-container113 border-right-1px">
-                    <span className="company-profile-component-text075">
+                  <div className="company-profile-component-container084 border-right-1px">
+                    <span className="company-profile-component-text055">
                       Sort by
                     </span>
                   </div>
-                  <div className="company-profile-component-container114">
+                  <div className="company-profile-component-container085">
                     <div
                       data-thq="thq-dropdown"
                       className="company-profile-component-thq-dropdown list-item"
@@ -576,7 +453,7 @@ const CompanyProfileComponent = (props) => {
                         data-thq="thq-dropdown-toggle"
                         className="company-profile-component-dropdown-toggle"
                       >
-                        <span className="company-profile-component-text076">
+                        <span className="company-profile-component-text056">
                           Date
                         </span>
                         <div
@@ -585,7 +462,7 @@ const CompanyProfileComponent = (props) => {
                         >
                           <svg
                             viewBox="0 0 1024 1024"
-                            className="company-profile-component-icon26"
+                            className="company-profile-component-icon24"
                           >
                             <path d="M426 726v-428l214 214z"></path>
                           </svg>
@@ -603,7 +480,7 @@ const CompanyProfileComponent = (props) => {
                             data-thq="thq-dropdown-toggle"
                             className="company-profile-component-dropdown-toggle01"
                           >
-                            <span className="company-profile-component-text077">
+                            <span className="company-profile-component-text057">
                               Employees
                             </span>
                           </div>
@@ -616,7 +493,7 @@ const CompanyProfileComponent = (props) => {
                             data-thq="thq-dropdown-toggle"
                             className="company-profile-component-dropdown-toggle02"
                           >
-                            <span className="company-profile-component-text078">
+                            <span className="company-profile-component-text058">
                               Status
                             </span>
                           </div>
@@ -629,7 +506,7 @@ const CompanyProfileComponent = (props) => {
                             data-thq="thq-dropdown-toggle"
                             className="company-profile-component-dropdown-toggle03"
                           >
-                            <span className="company-profile-component-text079">
+                            <span className="company-profile-component-text059">
                               Monitoring
                             </span>
                           </div>
@@ -639,26 +516,77 @@ const CompanyProfileComponent = (props) => {
                   </div>
                 </div>
                 <div className="company-profile-component-dropdown01">
-                  <div className="company-profile-component-container115 border-right-1px">
-                    <span className="company-profile-component-text080">
+                  <div className="company-profile-component-container086 border-right-1px">
+                    <span className="company-profile-component-text060">
                       Group
                     </span>
                   </div>
-                  <div className="company-profile-component-container116">
+                  <div className="company-profile-component-container087">
                     <div
                       data-thq="thq-dropdown"
-                      className="company-profile-component-thq-dropdown1 list-item"
+                      className="company-profile-component-thq-dropdown01 list-item"
                     >
                       <div
                         data-thq="thq-dropdown-toggle"
                         className="company-profile-component-dropdown-toggle04"
                       >
-                        <span className="company-profile-component-text081">
+                        <span className="company-profile-component-text061">
                           Date
                         </span>
                         <div
                           data-thq="thq-dropdown-arrow"
-                          className="company-profile-component-dropdown-arrow1"
+                          className="company-profile-component-dropdown-arrow01"
+                        >
+                          <svg
+                            viewBox="0 0 1024 1024"
+                            className="company-profile-component-icon26"
+                          >
+                            <path d="M426 726v-428l214 214z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <ul
+                        data-thq="thq-dropdown-list"
+                        className="company-profile-component-dropdown-list01"
+                      >
+                        <li
+                          data-thq="thq-dropdown"
+                          className="company-profile-component-dropdown02 list-item"
+                        >
+                          <div
+                            data-thq="thq-dropdown-toggle"
+                            className="company-profile-component-dropdown-toggle05"
+                          >
+                            <span className="company-profile-component-text062">
+                              Sub-menu Item
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className="company-profile-component-dropdown03">
+                  <div className="company-profile-component-container088 border-right-1px">
+                    <span className="company-profile-component-text063">
+                      Status
+                    </span>
+                  </div>
+                  <div className="company-profile-component-container089">
+                    <div
+                      data-thq="thq-dropdown"
+                      className="company-profile-component-thq-dropdown02 list-item"
+                    >
+                      <div
+                        data-thq="thq-dropdown-toggle"
+                        className="company-profile-component-dropdown-toggle06"
+                      >
+                        <span className="company-profile-component-text064">
+                          Date
+                        </span>
+                        <div
+                          data-thq="thq-dropdown-arrow"
+                          className="company-profile-component-dropdown-arrow02"
                         >
                           <svg
                             viewBox="0 0 1024 1024"
@@ -670,58 +598,7 @@ const CompanyProfileComponent = (props) => {
                       </div>
                       <ul
                         data-thq="thq-dropdown-list"
-                        className="company-profile-component-dropdown-list1"
-                      >
-                        <li
-                          data-thq="thq-dropdown"
-                          className="company-profile-component-dropdown02 list-item"
-                        >
-                          <div
-                            data-thq="thq-dropdown-toggle"
-                            className="company-profile-component-dropdown-toggle05"
-                          >
-                            <span className="company-profile-component-text082">
-                              Sub-menu Item
-                            </span>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div className="company-profile-component-dropdown03">
-                  <div className="company-profile-component-container117 border-right-1px">
-                    <span className="company-profile-component-text083">
-                      Status
-                    </span>
-                  </div>
-                  <div className="company-profile-component-container118">
-                    <div
-                      data-thq="thq-dropdown"
-                      className="company-profile-component-thq-dropdown2 list-item"
-                    >
-                      <div
-                        data-thq="thq-dropdown-toggle"
-                        className="company-profile-component-dropdown-toggle06"
-                      >
-                        <span className="company-profile-component-text084">
-                          Date
-                        </span>
-                        <div
-                          data-thq="thq-dropdown-arrow"
-                          className="company-profile-component-dropdown-arrow2"
-                        >
-                          <svg
-                            viewBox="0 0 1024 1024"
-                            className="company-profile-component-icon30"
-                          >
-                            <path d="M426 726v-428l214 214z"></path>
-                          </svg>
-                        </div>
-                      </div>
-                      <ul
-                        data-thq="thq-dropdown-list"
-                        className="company-profile-component-dropdown-list2"
+                        className="company-profile-component-dropdown-list02"
                       >
                         <li
                           data-thq="thq-dropdown"
@@ -731,7 +608,7 @@ const CompanyProfileComponent = (props) => {
                             data-thq="thq-dropdown-toggle"
                             className="company-profile-component-dropdown-toggle07"
                           >
-                            <span className="company-profile-component-text085">
+                            <span className="company-profile-component-text065">
                               Sub-menu Item
                             </span>
                           </div>
@@ -741,59 +618,59 @@ const CompanyProfileComponent = (props) => {
                   </div>
                 </div>
               </div>
-              <div className="company-profile-component-container119 clickable">
+              <div className="company-profile-component-container090 clickable">
                 <svg
                   viewBox="0 0 1024 1024"
-                  className="company-profile-component-icon32"
+                  className="company-profile-component-icon30"
                 >
                   <path d="M214 768h596v86h-596v-86zM810 384l-298 298-298-298h170v-256h256v256h170z"></path>
                 </svg>
                 <span>Download CSV</span>
               </div>
             </div>
-            <div className="company-profile-component-container120">
+            <div className="company-profile-component-container091">
               <ul className="list">
                 <li className="company-profile-component-li list-item">
-                  <div className="company-profile-component-container121">
-                    <div className="company-profile-component-container122">
-                      <div className="company-profile-component-container123">
+                  <div className="company-profile-component-container092">
+                    <div className="company-profile-component-container093">
+                      <div className="company-profile-component-container094">
                         <img
                           alt="image"
                           src="https://images.unsplash.com/photo-1569399078436-da10fbd60f12?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDQ0fHxMb2dvfGVufDB8fHx8MTY4NjAyOTc1Mnww&amp;ixlib=rb-4.0.3&amp;w=200"
-                          className="company-profile-component-image3"
+                          className="company-profile-component-image2"
                         />
-                        <div className="company-profile-component-container124"></div>
+                        <div className="company-profile-component-container095"></div>
                       </div>
-                      <div className="company-profile-component-container125">
-                        <div className="company-profile-component-container126">
-                          <span className="company-profile-component-text087">
+                      <div className="company-profile-component-container096">
+                        <div className="company-profile-component-container097">
+                          <span className="company-profile-component-text067">
                             HeyData GmbH
                           </span>
-                          <div className="company-profile-component-container127">
-                            <div className="company-profile-component-container128">
-                              <span className="company-profile-component-text088">
+                          <div className="company-profile-component-container098">
+                            <div className="company-profile-component-container099">
+                              <span className="company-profile-component-text068">
                                 Scanned
                               </span>
                             </div>
-                            <div className="company-profile-component-container129">
-                              <span className="company-profile-component-text089">
+                            <div className="company-profile-component-container100">
+                              <span className="company-profile-component-text069">
                                 Onboarding
                               </span>
                             </div>
-                            <div className="company-profile-component-container130">
-                              <span className="company-profile-component-text090">
+                            <div className="company-profile-component-container101">
+                              <span className="company-profile-component-text070">
                                 Cookie
                               </span>
                             </div>
-                            <div className="company-profile-component-container131">
-                              <span className="company-profile-component-text091">
+                            <div className="company-profile-component-container102">
+                              <span className="company-profile-component-text071">
                                 Extension
                               </span>
                             </div>
                           </div>
                         </div>
-                        <div className="company-profile-component-container132">
-                          <span className="company-profile-component-text092">
+                        <div className="company-profile-component-container103">
+                          <span className="company-profile-component-text072">
                             <span>
                               87
                               <span
@@ -810,33 +687,98 @@ const CompanyProfileComponent = (props) => {
                               />
                             </span>
                           </span>
-                          <span className="company-profile-component-text095">
+                          <span className="company-profile-component-text075">
                             under observation
                           </span>
                         </div>
                       </div>
                     </div>
-                    <div className="company-profile-component-container133">
-                      <div className="company-profile-component-container134">
-                        <div className="company-profile-component-container135">
-                          <span className="company-profile-component-text096">
+                    <div className="company-profile-component-container104">
+                      <div className="company-profile-component-container105">
+                        <div className="company-profile-component-container106">
+                          <span className="company-profile-component-text076">
                             386
                           </span>
-                          <span className="company-profile-component-text097">
+                          <span className="company-profile-component-text077">
                             Employees
                           </span>
                         </div>
-                        <div className="company-profile-component-container136">
-                          <span className="company-profile-component-text098">
+                        <div className="company-profile-component-container107">
+                          <span className="company-profile-component-text078">
                             Last scan
                           </span>
-                          <span className="company-profile-component-text099">
+                          <span className="company-profile-component-text079">
                             15 days ago
                           </span>
                         </div>
                       </div>
-                      <div className="company-profile-component-container137"></div>
-                      <div className="company-profile-component-container138">
+                      <div className="company-profile-component-container108"></div>
+                      <div className="company-profile-component-container109">
+                        <svg
+                          viewBox="0 0 1024 1024"
+                          className="company-profile-component-icon32"
+                        >
+                          <path d="M597.333 512c0-23.552-9.6-44.928-25.003-60.331s-36.779-25.003-60.331-25.003-44.928 9.6-60.331 25.003-25.003 36.779-25.003 60.331 9.6 44.928 25.003 60.331 36.779 25.003 60.331 25.003 44.928-9.6 60.331-25.003 25.003-36.779 25.003-60.331zM896 512c0-23.552-9.6-44.928-25.003-60.331s-36.779-25.003-60.331-25.003-44.928 9.6-60.331 25.003-25.003 36.779-25.003 60.331 9.6 44.928 25.003 60.331 36.779 25.003 60.331 25.003 44.928-9.6 60.331-25.003 25.003-36.779 25.003-60.331zM298.667 512c0-23.552-9.6-44.928-25.003-60.331s-36.779-25.003-60.331-25.003-44.928 9.6-60.331 25.003-25.003 36.779-25.003 60.331 9.6 44.928 25.003 60.331 36.779 25.003 60.331 25.003 44.928-9.6 60.331-25.003 25.003-36.779 25.003-60.331z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li className="company-profile-component-li01 list-item">
+                  <div className="company-profile-component-container110">
+                    <div className="company-profile-component-container111">
+                      <div className="company-profile-component-container112">
+                        <img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1528892952291-009c663ce843?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDQwfHxwcm9maWx8ZW58MHx8fHwxNjg2MTQ2OTU1fDA&amp;ixlib=rb-4.0.3&amp;w=200"
+                          className="company-profile-component-image3"
+                        />
+                        <div className="company-profile-component-container113"></div>
+                      </div>
+                      <div className="company-profile-component-container114">
+                        <div className="company-profile-component-container115">
+                          <span className="company-profile-component-text080">
+                            Deivisson Almeida de Souza
+                          </span>
+                          <div className="company-profile-component-container116">
+                            <div className="company-profile-component-container117">
+                              <span className="company-profile-component-text081">
+                                Scanned
+                              </span>
+                            </div>
+                            <div className="company-profile-component-container118">
+                              <span className="company-profile-component-text082">
+                                Leads
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="company-profile-component-container119">
+                          <span className="company-profile-component-text083">
+                            HeyData GmbH
+                          </span>
+                          <span className="company-profile-component-text084">
+                            Software Developer
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="company-profile-component-container120">
+                      <div className="company-profile-component-container121">
+                        <div className="company-profile-component-container122">
+                          <span className="company-profile-component-text085">
+                            386
+                          </span>
+                          <span className="company-profile-component-text086">
+                            Employees
+                          </span>
+                        </div>
+                        <span className="company-profile-component-text087">
+                          15 days ago
+                        </span>
+                      </div>
+                      <div className="company-profile-component-container123"></div>
+                      <div className="company-profile-component-container124">
                         <svg
                           viewBox="0 0 1024 1024"
                           className="company-profile-component-icon34"
@@ -847,84 +789,19 @@ const CompanyProfileComponent = (props) => {
                     </div>
                   </div>
                 </li>
-                <li className="company-profile-component-li01 list-item">
-                  <div className="company-profile-component-container139">
-                    <div className="company-profile-component-container140">
-                      <div className="company-profile-component-container141">
-                        <img
-                          alt="image"
-                          src="https://images.unsplash.com/photo-1528892952291-009c663ce843?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDQwfHxwcm9maWx8ZW58MHx8fHwxNjg2MTQ2OTU1fDA&amp;ixlib=rb-4.0.3&amp;w=200"
-                          className="company-profile-component-image4"
-                        />
-                        <div className="company-profile-component-container142"></div>
-                      </div>
-                      <div className="company-profile-component-container143">
-                        <div className="company-profile-component-container144">
-                          <span className="company-profile-component-text100">
-                            Deivisson Almeida de Souza
-                          </span>
-                          <div className="company-profile-component-container145">
-                            <div className="company-profile-component-container146">
-                              <span className="company-profile-component-text101">
-                                Scanned
-                              </span>
-                            </div>
-                            <div className="company-profile-component-container147">
-                              <span className="company-profile-component-text102">
-                                Leads
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="company-profile-component-container148">
-                          <span className="company-profile-component-text103">
-                            HeyData GmbH
-                          </span>
-                          <span className="company-profile-component-text104">
-                            Software Developer
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="company-profile-component-container149">
-                      <div className="company-profile-component-container150">
-                        <div className="company-profile-component-container151">
-                          <span className="company-profile-component-text105">
-                            386
-                          </span>
-                          <span className="company-profile-component-text106">
-                            Employees
-                          </span>
-                        </div>
-                        <span className="company-profile-component-text107">
-                          15 days ago
-                        </span>
-                      </div>
-                      <div className="company-profile-component-container152"></div>
-                      <div className="company-profile-component-container153">
-                        <svg
-                          viewBox="0 0 1024 1024"
-                          className="company-profile-component-icon36"
-                        >
-                          <path d="M597.333 512c0-23.552-9.6-44.928-25.003-60.331s-36.779-25.003-60.331-25.003-44.928 9.6-60.331 25.003-25.003 36.779-25.003 60.331 9.6 44.928 25.003 60.331 36.779 25.003 60.331 25.003 44.928-9.6 60.331-25.003 25.003-36.779 25.003-60.331zM896 512c0-23.552-9.6-44.928-25.003-60.331s-36.779-25.003-60.331-25.003-44.928 9.6-60.331 25.003-25.003 36.779-25.003 60.331 9.6 44.928 25.003 60.331 36.779 25.003 60.331 25.003 44.928-9.6 60.331-25.003 25.003-36.779 25.003-60.331zM298.667 512c0-23.552-9.6-44.928-25.003-60.331s-36.779-25.003-60.331-25.003-44.928 9.6-60.331 25.003-25.003 36.779-25.003 60.331 9.6 44.928 25.003 60.331 36.779 25.003 60.331 25.003 44.928-9.6 60.331-25.003 25.003-36.779 25.003-60.331z"></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </li>
               </ul>
             </div>
-            <div className="company-profile-component-container154 content-box">
-              <div className="company-profile-component-container155 border-bottom-1px">
-                <div className="company-profile-component-container156">
+            <div className="company-profile-component-container125 content-box">
+              <div className="company-profile-component-container126 border-bottom-1px">
+                <div className="company-profile-component-container127">
                   <InfoIcon txt="CEO"></InfoIcon>
                   <InfoIcon txt="Software Engineer"></InfoIcon>
                   <InfoIcon></InfoIcon>
                   <InfoIcon txt="Germany"></InfoIcon>
                   <InfoIcon txt="Scanned"></InfoIcon>
                 </div>
-                <div className="company-profile-component-container157">
-                  <div className="company-profile-component-container158">
+                <div className="company-profile-component-container128">
+                  <div className="company-profile-component-container129">
                     <div className="btn-lila">
                       <svg
                         viewBox="0 0 804.5714285714286 1024"
@@ -934,7 +811,7 @@ const CompanyProfileComponent = (props) => {
                       </svg>
                       <span>Apply filter</span>
                     </div>
-                    <div className="company-profile-component-container160 btn-white-noTxt">
+                    <div className="company-profile-component-container131 btn-white-noTxt">
                       <svg viewBox="0 0 1024 1024" className="btn-icon">
                         <path d="M889.68 166.32c-93.608-102.216-228.154-166.32-377.68-166.32-282.77 0-512 229.23-512 512h96c0-229.75 186.25-416 416-416 123.020 0 233.542 53.418 309.696 138.306l-149.696 149.694h352v-352l-134.32 134.32z"></path>
                         <path d="M928 512c0 229.75-186.25 416-416 416-123.020 0-233.542-53.418-309.694-138.306l149.694-149.694h-352v352l134.32-134.32c93.608 102.216 228.154 166.32 377.68 166.32 282.77 0 512-229.23 512-512h-96z"></path>
@@ -943,32 +820,32 @@ const CompanyProfileComponent = (props) => {
                   </div>
                 </div>
               </div>
-              <div className="company-profile-component-container161">
-                <div className="company-profile-component-container162 border-right-1px">
+              <div className="company-profile-component-container132">
+                <div className="company-profile-component-container133 border-right-1px">
                   <CheckBoxComponent rootClassName="check-box-component-root-class-name"></CheckBoxComponent>
-                  <span className="company-profile-component-text109">
+                  <span className="company-profile-component-text089">
                     Scanned only
                   </span>
                 </div>
-                <div className="company-profile-component-container163 border-right-1px">
+                <div className="company-profile-component-container134 border-right-1px">
                   <div
                     data-thq="thq-dropdown"
-                    className="company-profile-component-thq-dropdown3 list-item"
+                    className="company-profile-component-thq-dropdown03 list-item"
                   >
                     <div
                       data-thq="thq-dropdown-toggle"
                       className="company-profile-component-dropdown-toggle08"
                     >
-                      <span className="company-profile-component-text110">
+                      <span className="company-profile-component-text090">
                         Preference
                       </span>
                       <div
                         data-thq="thq-dropdown-arrow"
-                        className="company-profile-component-dropdown-arrow3"
+                        className="company-profile-component-dropdown-arrow03"
                       >
                         <svg
                           viewBox="0 0 1024 1024"
-                          className="company-profile-component-icon43"
+                          className="company-profile-component-icon41"
                         >
                           <path d="M426 726v-428l214 214z"></path>
                         </svg>
@@ -976,7 +853,7 @@ const CompanyProfileComponent = (props) => {
                     </div>
                     <ul
                       data-thq="thq-dropdown-list"
-                      className="company-profile-component-dropdown-list3"
+                      className="company-profile-component-dropdown-list03"
                     >
                       <li
                         data-thq="thq-dropdown"
@@ -986,7 +863,7 @@ const CompanyProfileComponent = (props) => {
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle09"
                         >
-                          <span className="company-profile-component-text111">
+                          <span className="company-profile-component-text091">
                             <span>Sales</span>
                             <br></br>
                           </span>
@@ -1001,7 +878,7 @@ const CompanyProfileComponent = (props) => {
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle10"
                         >
-                          <span className="company-profile-component-text114">
+                          <span className="company-profile-component-text094">
                             Marketing
                           </span>
                           <CheckBoxComponent></CheckBoxComponent>
@@ -1015,7 +892,7 @@ const CompanyProfileComponent = (props) => {
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle11"
                         >
-                          <span className="company-profile-component-text115">
+                          <span className="company-profile-component-text095">
                             Finance
                           </span>
                           <CheckBoxComponent></CheckBoxComponent>
@@ -1029,7 +906,7 @@ const CompanyProfileComponent = (props) => {
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle12"
                         >
-                          <span className="company-profile-component-text116">
+                          <span className="company-profile-component-text096">
                             HR
                           </span>
                           <CheckBoxComponent></CheckBoxComponent>
@@ -1047,7 +924,7 @@ const CompanyProfileComponent = (props) => {
                           }}
                           className="company-profile-component-dropdown-toggle13"
                         >
-                          <span className="company-profile-component-text117">
+                          <span className="company-profile-component-text097">
                             See all
                           </span>
                         </div>
@@ -1055,25 +932,25 @@ const CompanyProfileComponent = (props) => {
                     </ul>
                   </div>
                 </div>
-                <div className="company-profile-component-container164 border-right-1px">
+                <div className="company-profile-component-container135 border-right-1px">
                   <div
                     data-thq="thq-dropdown"
-                    className="company-profile-component-thq-dropdown4 list-item"
+                    className="company-profile-component-thq-dropdown04 list-item"
                   >
                     <div
                       data-thq="thq-dropdown-toggle"
                       className="company-profile-component-dropdown-toggle14"
                     >
-                      <span className="company-profile-component-text118">
+                      <span className="company-profile-component-text098">
                         Locality
                       </span>
                       <div
                         data-thq="thq-dropdown-arrow"
-                        className="company-profile-component-dropdown-arrow4"
+                        className="company-profile-component-dropdown-arrow04"
                       >
                         <svg
                           viewBox="0 0 1024 1024"
-                          className="company-profile-component-icon45"
+                          className="company-profile-component-icon43"
                         >
                           <path d="M426 726v-428l214 214z"></path>
                         </svg>
@@ -1081,7 +958,7 @@ const CompanyProfileComponent = (props) => {
                     </div>
                     <ul
                       data-thq="thq-dropdown-list"
-                      className="company-profile-component-dropdown-list4"
+                      className="company-profile-component-dropdown-list04"
                     >
                       <li
                         data-thq="thq-dropdown"
@@ -1091,22 +968,19 @@ const CompanyProfileComponent = (props) => {
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle15"
                         >
-                          <span className="company-profile-component-text119">
+                          <span className="company-profile-component-text099">
                             <span>Sales</span>
                             <br></br>
                           </span>
                           <CheckBoxComponent></CheckBoxComponent>
                         </div>
                       </li>
-                      <li
-                        data-thq="thq-dropdown"
-                        className="company-profile-component-dropdown11 list-item"
-                      >
+                      <li data-thq="thq-dropdown">
                         <div
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle16"
                         >
-                          <span className="company-profile-component-text122">
+                          <span className="company-profile-component-text102">
                             Marketing
                           </span>
                           <CheckBoxComponent></CheckBoxComponent>
@@ -1120,7 +994,7 @@ const CompanyProfileComponent = (props) => {
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle17"
                         >
-                          <span className="company-profile-component-text123">
+                          <span className="company-profile-component-text103">
                             Finance
                           </span>
                           <CheckBoxComponent></CheckBoxComponent>
@@ -1134,7 +1008,7 @@ const CompanyProfileComponent = (props) => {
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle18"
                         >
-                          <span className="company-profile-component-text124">
+                          <span className="company-profile-component-text104">
                             HR
                           </span>
                           <CheckBoxComponent></CheckBoxComponent>
@@ -1148,7 +1022,7 @@ const CompanyProfileComponent = (props) => {
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle19"
                         >
-                          <span className="company-profile-component-text125">
+                          <span className="company-profile-component-text105">
                             See all
                           </span>
                         </div>
@@ -1156,25 +1030,25 @@ const CompanyProfileComponent = (props) => {
                     </ul>
                   </div>
                 </div>
-                <div className="company-profile-component-container165 border-right-1px">
+                <div className="company-profile-component-container136 border-right-1px">
                   <div
                     data-thq="thq-dropdown"
-                    className="company-profile-component-thq-dropdown5 list-item"
+                    className="company-profile-component-thq-dropdown05 list-item"
                   >
                     <div
                       data-thq="thq-dropdown-toggle"
                       className="company-profile-component-dropdown-toggle20"
                     >
-                      <span className="company-profile-component-text126">
+                      <span className="company-profile-component-text106">
                         Status
                       </span>
                       <div
                         data-thq="thq-dropdown-arrow"
-                        className="company-profile-component-dropdown-arrow5"
+                        className="company-profile-component-dropdown-arrow05"
                       >
                         <svg
                           viewBox="0 0 1024 1024"
-                          className="company-profile-component-icon47"
+                          className="company-profile-component-icon45"
                         >
                           <path d="M426 726v-428l214 214z"></path>
                         </svg>
@@ -1182,7 +1056,7 @@ const CompanyProfileComponent = (props) => {
                     </div>
                     <ul
                       data-thq="thq-dropdown-list"
-                      className="company-profile-component-dropdown-list5"
+                      className="company-profile-component-dropdown-list05"
                     >
                       <li
                         data-thq="thq-dropdown"
@@ -1192,7 +1066,7 @@ const CompanyProfileComponent = (props) => {
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle21"
                         >
-                          <span className="company-profile-component-text127">
+                          <span className="company-profile-component-text107">
                             <span>Sales</span>
                             <br></br>
                           </span>
@@ -1207,7 +1081,7 @@ const CompanyProfileComponent = (props) => {
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle22"
                         >
-                          <span className="company-profile-component-text130">
+                          <span className="company-profile-component-text110">
                             Marketing
                           </span>
                           <CheckBoxComponent></CheckBoxComponent>
@@ -1221,7 +1095,7 @@ const CompanyProfileComponent = (props) => {
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle23"
                         >
-                          <span className="company-profile-component-text131">
+                          <span className="company-profile-component-text111">
                             Finance
                           </span>
                           <CheckBoxComponent></CheckBoxComponent>
@@ -1235,7 +1109,7 @@ const CompanyProfileComponent = (props) => {
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle24"
                         >
-                          <span className="company-profile-component-text132">
+                          <span className="company-profile-component-text112">
                             HR
                           </span>
                           <CheckBoxComponent></CheckBoxComponent>
@@ -1249,7 +1123,7 @@ const CompanyProfileComponent = (props) => {
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle25"
                         >
-                          <span className="company-profile-component-text133">
+                          <span className="company-profile-component-text113">
                             See all
                           </span>
                         </div>
@@ -1257,25 +1131,25 @@ const CompanyProfileComponent = (props) => {
                     </ul>
                   </div>
                 </div>
-                <div className="company-profile-component-container166 border-right-1px">
+                <div className="company-profile-component-container137 border-right-1px">
                   <div
                     data-thq="thq-dropdown"
-                    className="company-profile-component-thq-dropdown6 list-item"
+                    className="company-profile-component-thq-dropdown06 list-item"
                   >
                     <div
                       data-thq="thq-dropdown-toggle"
                       className="company-profile-component-dropdown-toggle26"
                     >
-                      <span className="company-profile-component-text134">
+                      <span className="company-profile-component-text114">
                         List
                       </span>
                       <div
                         data-thq="thq-dropdown-arrow"
-                        className="company-profile-component-dropdown-arrow6"
+                        className="company-profile-component-dropdown-arrow06"
                       >
                         <svg
                           viewBox="0 0 1024 1024"
-                          className="company-profile-component-icon49"
+                          className="company-profile-component-icon47"
                         >
                           <path d="M426 726v-428l214 214z"></path>
                         </svg>
@@ -1283,7 +1157,7 @@ const CompanyProfileComponent = (props) => {
                     </div>
                     <ul
                       data-thq="thq-dropdown-list"
-                      className="company-profile-component-dropdown-list6"
+                      className="company-profile-component-dropdown-list06"
                     >
                       <li
                         data-thq="thq-dropdown"
@@ -1293,22 +1167,19 @@ const CompanyProfileComponent = (props) => {
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle27"
                         >
-                          <span className="company-profile-component-text135">
+                          <span className="company-profile-component-text115">
                             <span>Sales</span>
                             <br></br>
                           </span>
                           <CheckBoxComponent></CheckBoxComponent>
                         </div>
                       </li>
-                      <li
-                        data-thq="thq-dropdown"
-                        className="company-profile-component-dropdown21 list-item"
-                      >
+                      <li data-thq="thq-dropdown">
                         <div
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle28"
                         >
-                          <span className="company-profile-component-text138">
+                          <span className="company-profile-component-text118">
                             Marketing
                           </span>
                           <CheckBoxComponent></CheckBoxComponent>
@@ -1322,7 +1193,7 @@ const CompanyProfileComponent = (props) => {
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle29"
                         >
-                          <span className="company-profile-component-text139">
+                          <span className="company-profile-component-text119">
                             Finance
                           </span>
                           <CheckBoxComponent></CheckBoxComponent>
@@ -1336,7 +1207,7 @@ const CompanyProfileComponent = (props) => {
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle30"
                         >
-                          <span className="company-profile-component-text140">
+                          <span className="company-profile-component-text120">
                             HR
                           </span>
                           <CheckBoxComponent></CheckBoxComponent>
@@ -1350,7 +1221,7 @@ const CompanyProfileComponent = (props) => {
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle31"
                         >
-                          <span className="company-profile-component-text141">
+                          <span className="company-profile-component-text121">
                             See all
                           </span>
                         </div>
@@ -1358,25 +1229,25 @@ const CompanyProfileComponent = (props) => {
                     </ul>
                   </div>
                 </div>
-                <div className="company-profile-component-container167">
+                <div className="company-profile-component-container138">
                   <div
                     data-thq="thq-dropdown"
-                    className="company-profile-component-thq-dropdown7 list-item"
+                    className="company-profile-component-thq-dropdown07 list-item"
                   >
                     <div
                       data-thq="thq-dropdown-toggle"
                       className="company-profile-component-dropdown-toggle32"
                     >
-                      <span className="company-profile-component-text142">
+                      <span className="company-profile-component-text122">
                         Employees
                       </span>
                       <div
                         data-thq="thq-dropdown-arrow"
-                        className="company-profile-component-dropdown-arrow7"
+                        className="company-profile-component-dropdown-arrow07"
                       >
                         <svg
                           viewBox="0 0 1024 1024"
-                          className="company-profile-component-icon51"
+                          className="company-profile-component-icon49"
                         >
                           <path d="M426 726v-428l214 214z"></path>
                         </svg>
@@ -1384,7 +1255,7 @@ const CompanyProfileComponent = (props) => {
                     </div>
                     <ul
                       data-thq="thq-dropdown-list"
-                      className="company-profile-component-dropdown-list7"
+                      className="company-profile-component-dropdown-list07"
                     >
                       <li
                         data-thq="thq-dropdown"
@@ -1394,7 +1265,7 @@ const CompanyProfileComponent = (props) => {
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle33"
                         >
-                          <span className="company-profile-component-text143">
+                          <span className="company-profile-component-text123">
                             <span>Sales</span>
                             <br></br>
                           </span>
@@ -1409,7 +1280,7 @@ const CompanyProfileComponent = (props) => {
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle34"
                         >
-                          <span className="company-profile-component-text146">
+                          <span className="company-profile-component-text126">
                             Marketing
                           </span>
                           <CheckBoxComponent></CheckBoxComponent>
@@ -1423,7 +1294,7 @@ const CompanyProfileComponent = (props) => {
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle35"
                         >
-                          <span className="company-profile-component-text147">
+                          <span className="company-profile-component-text127">
                             Finance
                           </span>
                           <CheckBoxComponent></CheckBoxComponent>
@@ -1437,7 +1308,7 @@ const CompanyProfileComponent = (props) => {
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle36"
                         >
-                          <span className="company-profile-component-text148">
+                          <span className="company-profile-component-text128">
                             HR
                           </span>
                           <CheckBoxComponent></CheckBoxComponent>
@@ -1451,7 +1322,7 @@ const CompanyProfileComponent = (props) => {
                           data-thq="thq-dropdown-toggle"
                           className="company-profile-component-dropdown-toggle37"
                         >
-                          <span className="company-profile-component-text149">
+                          <span className="company-profile-component-text129">
                             See all
                           </span>
                         </div>
@@ -1461,25 +1332,25 @@ const CompanyProfileComponent = (props) => {
                 </div>
               </div>
             </div>
-            <div className="company-profile-component-container168">
-              <div className="company-profile-component-container169">
-                <div className="company-profile-component-container170">
-                  <span className="company-profile-component-text150">
+            <div className="company-profile-component-container139">
+              <div className="company-profile-component-container140">
+                <div className="company-profile-component-container141">
+                  <span className="company-profile-component-text130">
                     Customer list
                   </span>
-                  <div className="company-profile-component-container171">
-                    <span className="company-profile-component-text151">
+                  <div className="company-profile-component-container142">
+                    <span className="company-profile-component-text131">
                       We´ve found
                     </span>
-                    <span className="company-profile-component-text152">
+                    <span className="company-profile-component-text132">
                       354
                     </span>
-                    <span className="company-profile-component-text153">
+                    <span className="company-profile-component-text133">
                       Companies
                     </span>
                   </div>
                 </div>
-                <div className="company-profile-component-container172">
+                <div className="company-profile-component-container143">
                   <div className="btn-white">
                     <span>Select all</span>
                   </div>
@@ -1488,47 +1359,35 @@ const CompanyProfileComponent = (props) => {
                   </div>
                 </div>
               </div>
-              <div className="company-profile-component-container175 content-box">
-                <div className="company-profile-component-container176 border-bottom-1px">
-                  <div className="company-profile-component-container177 border-right-1px">
+              <div className="company-profile-component-container146 content-box">
+                <div className="company-profile-component-container147 border-bottom-1px">
+                  <div className="company-profile-component-container148 border-right-1px">
                     <CheckBoxComponent rootClassName="check-box-component-root-class-name76"></CheckBoxComponent>
                   </div>
-                  <div className="company-profile-component-container178 border-right-1px">
-                    <span className="company-profile-component-text156">
+                  <div className="company-profile-component-container149 border-right-1px">
+                    <span className="company-profile-component-text136">
                       Name
                     </span>
                   </div>
-                  <div className="company-profile-component-container179 border-right-1px">
+                  <div className="company-profile-component-container150 border-right-1px">
                     <span>Locality</span>
                   </div>
-                  <div className="company-profile-component-container180 border-right-1px">
+                  <div className="company-profile-component-container151 border-right-1px">
                     <span>Employees</span>
                   </div>
-                  <div className="company-profile-component-container181 border-right-1px">
+                  <div className="company-profile-component-container152 border-right-1px">
                     <span>Triggered</span>
                   </div>
-                  <div className="company-profile-component-container182 border-right-1px">
+                  <div className="company-profile-component-container153 border-right-1px">
                     <span>List</span>
                   </div>
-                  <div className="company-profile-component-container183">
+                  <div className="company-profile-component-container154">
                     <span>Scan status</span>
                   </div>
-                  <div className="company-profile-component-container184"></div>
+                  <div className="company-profile-component-container155"></div>
                 </div>
-                <div className="company-profile-component-container185">
+                <div className="company-profile-component-container156">
                   <ul className="list">
-                    <li className="list-item">
-                      <CompanyCustomerItem></CompanyCustomerItem>
-                    </li>
-                    <li className="list-item">
-                      <CompanyCustomerItem></CompanyCustomerItem>
-                    </li>
-                    <li className="list-item">
-                      <CompanyCustomerItem></CompanyCustomerItem>
-                    </li>
-                    <li className="list-item">
-                      <CompanyCustomerItem></CompanyCustomerItem>
-                    </li>
                     <li className="list-item">
                       <CompanyCustomerItem></CompanyCustomerItem>
                     </li>
@@ -1540,25 +1399,985 @@ const CompanyProfileComponent = (props) => {
         )}
         {menu_3 && (
           <div className="company-profile-component-menu3">
-            <div className="company-profile-component-container186">
-              <div className="company-profile-component-container187">
-                <div className="company-profile-component-container188">
-                  <span className="company-profile-component-text162">
-                    LinkedIn Session Cookie
+            <div className="company-profile-component-container157">
+              <div className="company-profile-component-container158">
+                <div className="company-profile-component-dropdown30">
+                  <div className="company-profile-component-container159 border-right-1px">
+                    <span className="company-profile-component-text142">
+                      Sort by
+                    </span>
+                  </div>
+                  <div className="company-profile-component-container160">
+                    <div
+                      data-thq="thq-dropdown"
+                      className="company-profile-component-thq-dropdown08 list-item"
+                    >
+                      <div
+                        data-thq="thq-dropdown-toggle"
+                        className="company-profile-component-dropdown-toggle38"
+                      >
+                        <span className="company-profile-component-text143">
+                          Date
+                        </span>
+                        <div
+                          data-thq="thq-dropdown-arrow"
+                          className="company-profile-component-dropdown-arrow08"
+                        >
+                          <svg
+                            viewBox="0 0 1024 1024"
+                            className="company-profile-component-icon51"
+                          >
+                            <path d="M426 726v-428l214 214z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <ul
+                        data-thq="thq-dropdown-list"
+                        className="company-profile-component-dropdown-list08"
+                      >
+                        <li
+                          data-thq="thq-dropdown"
+                          className="company-profile-component-dropdown11 list-item company-profile-component-dropdown11 list-item"
+                        >
+                          <div
+                            data-thq="thq-dropdown-toggle"
+                            className="company-profile-component-dropdown-toggle39"
+                          >
+                            <span className="company-profile-component-text144">
+                              Employees
+                            </span>
+                          </div>
+                        </li>
+                        <li
+                          data-thq="thq-dropdown"
+                          className="company-profile-component-dropdown21 list-item company-profile-component-dropdown21 list-item"
+                        >
+                          <div
+                            data-thq="thq-dropdown-toggle"
+                            className="company-profile-component-dropdown-toggle40"
+                          >
+                            <span className="company-profile-component-text145">
+                              Status
+                            </span>
+                          </div>
+                        </li>
+                        <li data-thq="thq-dropdown">
+                          <div
+                            data-thq="thq-dropdown-toggle"
+                            className="company-profile-component-dropdown-toggle41"
+                          >
+                            <span className="company-profile-component-text146">
+                              Monitoring
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className="company-profile-component-dropdown31 list-item company-profile-component-dropdown31">
+                  <div className="company-profile-component-container161 border-right-1px">
+                    <span className="company-profile-component-text147">
+                      Group
+                    </span>
+                  </div>
+                  <div className="company-profile-component-container162">
+                    <div
+                      data-thq="thq-dropdown"
+                      className="company-profile-component-thq-dropdown09 list-item"
+                    >
+                      <div
+                        data-thq="thq-dropdown-toggle"
+                        className="company-profile-component-dropdown-toggle42"
+                      >
+                        <span className="company-profile-component-text148">
+                          Date
+                        </span>
+                        <div
+                          data-thq="thq-dropdown-arrow"
+                          className="company-profile-component-dropdown-arrow09"
+                        >
+                          <svg
+                            viewBox="0 0 1024 1024"
+                            className="company-profile-component-icon53"
+                          >
+                            <path d="M426 726v-428l214 214z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <ul
+                        data-thq="thq-dropdown-list"
+                        className="company-profile-component-dropdown-list09"
+                      >
+                        <li
+                          data-thq="thq-dropdown"
+                          className="company-profile-component-dropdown32 list-item"
+                        >
+                          <div
+                            data-thq="thq-dropdown-toggle"
+                            className="company-profile-component-dropdown-toggle43"
+                          >
+                            <span className="company-profile-component-text149">
+                              Sub-menu Item
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className="company-profile-component-dropdown33">
+                  <div className="company-profile-component-container163 border-right-1px">
+                    <span className="company-profile-component-text150">
+                      Status
+                    </span>
+                  </div>
+                  <div className="company-profile-component-container164">
+                    <div
+                      data-thq="thq-dropdown"
+                      className="company-profile-component-thq-dropdown10 list-item"
+                    >
+                      <div
+                        data-thq="thq-dropdown-toggle"
+                        className="company-profile-component-dropdown-toggle44"
+                      >
+                        <span className="company-profile-component-text151">
+                          Date
+                        </span>
+                        <div
+                          data-thq="thq-dropdown-arrow"
+                          className="company-profile-component-dropdown-arrow10"
+                        >
+                          <svg
+                            viewBox="0 0 1024 1024"
+                            className="company-profile-component-icon55"
+                          >
+                            <path d="M426 726v-428l214 214z"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <ul
+                        data-thq="thq-dropdown-list"
+                        className="company-profile-component-dropdown-list10"
+                      >
+                        <li
+                          data-thq="thq-dropdown"
+                          className="company-profile-component-dropdown34 list-item"
+                        >
+                          <div
+                            data-thq="thq-dropdown-toggle"
+                            className="company-profile-component-dropdown-toggle45"
+                          >
+                            <span className="company-profile-component-text152">
+                              Sub-menu Item
+                            </span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="company-profile-component-container165 clickable">
+                <svg
+                  viewBox="0 0 1024 1024"
+                  className="company-profile-component-icon57"
+                >
+                  <path d="M214 768h596v86h-596v-86zM810 384l-298 298-298-298h170v-256h256v256h170z"></path>
+                </svg>
+                <span>Download CSV</span>
+              </div>
+            </div>
+            <div className="company-profile-component-container166">
+              <ul className="list">
+                <li className="company-profile-component-li03 list-item">
+                  <div className="company-profile-component-container167">
+                    <div className="company-profile-component-container168">
+                      <div className="company-profile-component-container169">
+                        <img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1569399078436-da10fbd60f12?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDQ0fHxMb2dvfGVufDB8fHx8MTY4NjAyOTc1Mnww&amp;ixlib=rb-4.0.3&amp;w=200"
+                          className="company-profile-component-image4"
+                        />
+                        <div className="company-profile-component-container170"></div>
+                      </div>
+                      <div className="company-profile-component-container171">
+                        <div className="company-profile-component-container172">
+                          <span className="company-profile-component-text154">
+                            HeyData GmbH
+                          </span>
+                          <div className="company-profile-component-container173">
+                            <div className="company-profile-component-container174">
+                              <span className="company-profile-component-text155">
+                                Scanned
+                              </span>
+                            </div>
+                            <div className="company-profile-component-container175">
+                              <span className="company-profile-component-text156">
+                                Onboarding
+                              </span>
+                            </div>
+                            <div className="company-profile-component-container176">
+                              <span className="company-profile-component-text157">
+                                Cookie
+                              </span>
+                            </div>
+                            <div className="company-profile-component-container177">
+                              <span className="company-profile-component-text158">
+                                Extension
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="company-profile-component-container178">
+                          <span className="company-profile-component-text159">
+                            <span>
+                              87
+                              <span
+                                dangerouslySetInnerHTML={{
+                                  __html: ' ',
+                                }}
+                              />
+                            </span>
+                            <span>
+                              <span
+                                dangerouslySetInnerHTML={{
+                                  __html: ' ',
+                                }}
+                              />
+                            </span>
+                          </span>
+                          <span className="company-profile-component-text162">
+                            under observation
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="company-profile-component-container179">
+                      <div className="company-profile-component-container180">
+                        <div className="company-profile-component-container181">
+                          <span className="company-profile-component-text163">
+                            386
+                          </span>
+                          <span className="company-profile-component-text164">
+                            Employees
+                          </span>
+                        </div>
+                        <div className="company-profile-component-container182">
+                          <span className="company-profile-component-text165">
+                            Last scan
+                          </span>
+                          <span className="company-profile-component-text166">
+                            15 days ago
+                          </span>
+                        </div>
+                      </div>
+                      <div className="company-profile-component-container183"></div>
+                      <div className="company-profile-component-container184">
+                        <svg
+                          viewBox="0 0 1024 1024"
+                          className="company-profile-component-icon59"
+                        >
+                          <path d="M597.333 512c0-23.552-9.6-44.928-25.003-60.331s-36.779-25.003-60.331-25.003-44.928 9.6-60.331 25.003-25.003 36.779-25.003 60.331 9.6 44.928 25.003 60.331 36.779 25.003 60.331 25.003 44.928-9.6 60.331-25.003 25.003-36.779 25.003-60.331zM896 512c0-23.552-9.6-44.928-25.003-60.331s-36.779-25.003-60.331-25.003-44.928 9.6-60.331 25.003-25.003 36.779-25.003 60.331 9.6 44.928 25.003 60.331 36.779 25.003 60.331 25.003 44.928-9.6 60.331-25.003 25.003-36.779 25.003-60.331zM298.667 512c0-23.552-9.6-44.928-25.003-60.331s-36.779-25.003-60.331-25.003-44.928 9.6-60.331 25.003-25.003 36.779-25.003 60.331 9.6 44.928 25.003 60.331 36.779 25.003 60.331 25.003 44.928-9.6 60.331-25.003 25.003-36.779 25.003-60.331z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li className="company-profile-component-li04 list-item">
+                  <div className="company-profile-component-container185">
+                    <div className="company-profile-component-container186">
+                      <div className="company-profile-component-container187">
+                        <img
+                          alt="image"
+                          src="https://images.unsplash.com/photo-1528892952291-009c663ce843?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDQwfHxwcm9maWx8ZW58MHx8fHwxNjg2MTQ2OTU1fDA&amp;ixlib=rb-4.0.3&amp;w=200"
+                          className="company-profile-component-image5"
+                        />
+                        <div className="company-profile-component-container188"></div>
+                      </div>
+                      <div className="company-profile-component-container189">
+                        <div className="company-profile-component-container190">
+                          <span className="company-profile-component-text167">
+                            Deivisson Almeida de Souza
+                          </span>
+                          <div className="company-profile-component-container191">
+                            <div className="company-profile-component-container192">
+                              <span className="company-profile-component-text168">
+                                Scanned
+                              </span>
+                            </div>
+                            <div className="company-profile-component-container193">
+                              <span className="company-profile-component-text169">
+                                Leads
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="company-profile-component-container194">
+                          <span className="company-profile-component-text170">
+                            HeyData GmbH
+                          </span>
+                          <span className="company-profile-component-text171">
+                            Software Developer
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="company-profile-component-container195">
+                      <div className="company-profile-component-container196">
+                        <div className="company-profile-component-container197">
+                          <span className="company-profile-component-text172">
+                            386
+                          </span>
+                          <span className="company-profile-component-text173">
+                            Employees
+                          </span>
+                        </div>
+                        <span className="company-profile-component-text174">
+                          15 days ago
+                        </span>
+                      </div>
+                      <div className="company-profile-component-container198"></div>
+                      <div className="company-profile-component-container199">
+                        <svg
+                          viewBox="0 0 1024 1024"
+                          className="company-profile-component-icon61"
+                        >
+                          <path d="M597.333 512c0-23.552-9.6-44.928-25.003-60.331s-36.779-25.003-60.331-25.003-44.928 9.6-60.331 25.003-25.003 36.779-25.003 60.331 9.6 44.928 25.003 60.331 36.779 25.003 60.331 25.003 44.928-9.6 60.331-25.003 25.003-36.779 25.003-60.331zM896 512c0-23.552-9.6-44.928-25.003-60.331s-36.779-25.003-60.331-25.003-44.928 9.6-60.331 25.003-25.003 36.779-25.003 60.331 9.6 44.928 25.003 60.331 36.779 25.003 60.331 25.003 44.928-9.6 60.331-25.003 25.003-36.779 25.003-60.331zM298.667 512c0-23.552-9.6-44.928-25.003-60.331s-36.779-25.003-60.331-25.003-44.928 9.6-60.331 25.003-25.003 36.779-25.003 60.331 9.6 44.928 25.003 60.331 36.779 25.003 60.331 25.003 44.928-9.6 60.331-25.003 25.003-36.779 25.003-60.331z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div className="company-profile-component-container200 content-box">
+              <div className="company-profile-component-container201 border-bottom-1px">
+                <div className="company-profile-component-container202">
+                  <InfoIcon txt="CEO"></InfoIcon>
+                  <InfoIcon txt="Software Engineer"></InfoIcon>
+                  <InfoIcon></InfoIcon>
+                  <InfoIcon txt="Germany"></InfoIcon>
+                  <InfoIcon txt="Scanned"></InfoIcon>
+                </div>
+                <div className="company-profile-component-container203">
+                  <div className="company-profile-component-container204">
+                    <div className="btn-lila">
+                      <svg
+                        viewBox="0 0 804.5714285714286 1024"
+                        className="btn-icon"
+                      >
+                        <path d="M801.714 168.571c5.714 13.714 2.857 29.714-8 40l-281.714 281.714v424c0 14.857-9.143 28-22.286 33.714-4.571 1.714-9.714 2.857-14.286 2.857-9.714 0-18.857-3.429-25.714-10.857l-146.286-146.286c-6.857-6.857-10.857-16-10.857-25.714v-277.714l-281.714-281.714c-10.857-10.286-13.714-26.286-8-40 5.714-13.143 18.857-22.286 33.714-22.286h731.429c14.857 0 28 9.143 33.714 22.286z"></path>
+                      </svg>
+                      <span>Apply filter</span>
+                    </div>
+                    <div className="company-profile-component-container206 btn-white-noTxt">
+                      <svg viewBox="0 0 1024 1024" className="btn-icon">
+                        <path d="M889.68 166.32c-93.608-102.216-228.154-166.32-377.68-166.32-282.77 0-512 229.23-512 512h96c0-229.75 186.25-416 416-416 123.020 0 233.542 53.418 309.696 138.306l-149.696 149.694h352v-352l-134.32 134.32z"></path>
+                        <path d="M928 512c0 229.75-186.25 416-416 416-123.020 0-233.542-53.418-309.694-138.306l149.694-149.694h-352v352l134.32-134.32c93.608 102.216 228.154 166.32 377.68 166.32 282.77 0 512-229.23 512-512h-96z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="company-profile-component-container207">
+                <div className="company-profile-component-container208 border-right-1px">
+                  <CheckBoxComponent rootClassName="check-box-component-root-class-name83"></CheckBoxComponent>
+                  <span className="company-profile-component-text176">
+                    Scanned only
                   </span>
-                  <div className="company-profile-component-container189">
-                    <span className="company-profile-component-text163">
+                </div>
+                <div className="company-profile-component-container209 border-right-1px">
+                  <div
+                    data-thq="thq-dropdown"
+                    className="company-profile-component-thq-dropdown11 list-item"
+                  >
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      className="company-profile-component-dropdown-toggle46"
+                    >
+                      <span className="company-profile-component-text177">
+                        Preference
+                      </span>
+                      <div
+                        data-thq="thq-dropdown-arrow"
+                        className="company-profile-component-dropdown-arrow11"
+                      >
+                        <svg
+                          viewBox="0 0 1024 1024"
+                          className="company-profile-component-icon68"
+                        >
+                          <path d="M426 726v-428l214 214z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <ul
+                      data-thq="thq-dropdown-list"
+                      className="company-profile-component-dropdown-list11"
+                    >
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown35 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle47"
+                        >
+                          <span className="company-profile-component-text178">
+                            <span>Sales</span>
+                            <br></br>
+                          </span>
+                          <CheckBoxComponent></CheckBoxComponent>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown36 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle48"
+                        >
+                          <span className="company-profile-component-text181">
+                            Marketing
+                          </span>
+                          <CheckBoxComponent></CheckBoxComponent>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown37 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle49"
+                        >
+                          <span className="company-profile-component-text182">
+                            Finance
+                          </span>
+                          <CheckBoxComponent></CheckBoxComponent>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown38 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle50"
+                        >
+                          <span className="company-profile-component-text183">
+                            HR
+                          </span>
+                          <CheckBoxComponent></CheckBoxComponent>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown39 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle51"
+                        >
+                          <span className="company-profile-component-text184">
+                            See all
+                          </span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="company-profile-component-container210 border-right-1px">
+                  <div
+                    data-thq="thq-dropdown"
+                    className="company-profile-component-thq-dropdown12 list-item"
+                  >
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      className="company-profile-component-dropdown-toggle52"
+                    >
+                      <span className="company-profile-component-text185">
+                        Locality
+                      </span>
+                      <div
+                        data-thq="thq-dropdown-arrow"
+                        className="company-profile-component-dropdown-arrow12"
+                      >
+                        <svg
+                          viewBox="0 0 1024 1024"
+                          className="company-profile-component-icon70"
+                        >
+                          <path d="M426 726v-428l214 214z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <ul
+                      data-thq="thq-dropdown-list"
+                      className="company-profile-component-dropdown-list12"
+                    >
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown40 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle53"
+                        >
+                          <span className="company-profile-component-text186">
+                            <span>Sales</span>
+                            <br></br>
+                          </span>
+                          <CheckBoxComponent></CheckBoxComponent>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown41 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle54"
+                        >
+                          <span className="company-profile-component-text189">
+                            Marketing
+                          </span>
+                          <CheckBoxComponent></CheckBoxComponent>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown42 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle55"
+                        >
+                          <span className="company-profile-component-text190">
+                            Finance
+                          </span>
+                          <CheckBoxComponent></CheckBoxComponent>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown43 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle56"
+                        >
+                          <span className="company-profile-component-text191">
+                            HR
+                          </span>
+                          <CheckBoxComponent></CheckBoxComponent>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown44 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle57"
+                        >
+                          <span className="company-profile-component-text192">
+                            See all
+                          </span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="company-profile-component-container211 border-right-1px">
+                  <div
+                    data-thq="thq-dropdown"
+                    className="company-profile-component-thq-dropdown13 list-item"
+                  >
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      className="company-profile-component-dropdown-toggle58"
+                    >
+                      <span className="company-profile-component-text193">
+                        Status
+                      </span>
+                      <div
+                        data-thq="thq-dropdown-arrow"
+                        className="company-profile-component-dropdown-arrow13"
+                      >
+                        <svg
+                          viewBox="0 0 1024 1024"
+                          className="company-profile-component-icon72"
+                        >
+                          <path d="M426 726v-428l214 214z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <ul
+                      data-thq="thq-dropdown-list"
+                      className="company-profile-component-dropdown-list13"
+                    >
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown45 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle59"
+                        >
+                          <span className="company-profile-component-text194">
+                            <span>Sales</span>
+                            <br></br>
+                          </span>
+                          <CheckBoxComponent></CheckBoxComponent>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown46 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle60"
+                        >
+                          <span className="company-profile-component-text197">
+                            Marketing
+                          </span>
+                          <CheckBoxComponent></CheckBoxComponent>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown47 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle61"
+                        >
+                          <span className="company-profile-component-text198">
+                            Finance
+                          </span>
+                          <CheckBoxComponent></CheckBoxComponent>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown48 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle62"
+                        >
+                          <span className="company-profile-component-text199">
+                            HR
+                          </span>
+                          <CheckBoxComponent></CheckBoxComponent>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown49 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle63"
+                        >
+                          <span className="company-profile-component-text200">
+                            See all
+                          </span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="company-profile-component-container212 border-right-1px">
+                  <div
+                    data-thq="thq-dropdown"
+                    className="company-profile-component-thq-dropdown14 list-item"
+                  >
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      className="company-profile-component-dropdown-toggle64"
+                    >
+                      <span className="company-profile-component-text201">
+                        List
+                      </span>
+                      <div
+                        data-thq="thq-dropdown-arrow"
+                        className="company-profile-component-dropdown-arrow14"
+                      >
+                        <svg
+                          viewBox="0 0 1024 1024"
+                          className="company-profile-component-icon74"
+                        >
+                          <path d="M426 726v-428l214 214z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <ul
+                      data-thq="thq-dropdown-list"
+                      className="company-profile-component-dropdown-list14"
+                    >
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown50 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle65"
+                        >
+                          <span className="company-profile-component-text202">
+                            <span>Sales</span>
+                            <br></br>
+                          </span>
+                          <CheckBoxComponent></CheckBoxComponent>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown51 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle66"
+                        >
+                          <span className="company-profile-component-text205">
+                            Marketing
+                          </span>
+                          <CheckBoxComponent></CheckBoxComponent>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown52 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle67"
+                        >
+                          <span className="company-profile-component-text206">
+                            Finance
+                          </span>
+                          <CheckBoxComponent></CheckBoxComponent>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown53 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle68"
+                        >
+                          <span className="company-profile-component-text207">
+                            HR
+                          </span>
+                          <CheckBoxComponent></CheckBoxComponent>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown54 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle69"
+                        >
+                          <span className="company-profile-component-text208">
+                            See all
+                          </span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="company-profile-component-container213">
+                  <div
+                    data-thq="thq-dropdown"
+                    className="company-profile-component-thq-dropdown15 list-item"
+                  >
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      className="company-profile-component-dropdown-toggle70"
+                    >
+                      <span className="company-profile-component-text209">
+                        Triggered
+                      </span>
+                      <div
+                        data-thq="thq-dropdown-arrow"
+                        className="company-profile-component-dropdown-arrow15"
+                      >
+                        <svg
+                          viewBox="0 0 1024 1024"
+                          className="company-profile-component-icon76"
+                        >
+                          <path d="M426 726v-428l214 214z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <ul
+                      data-thq="thq-dropdown-list"
+                      className="company-profile-component-dropdown-list15"
+                    >
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown55 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle71"
+                        >
+                          <span className="company-profile-component-text210">
+                            <span>Sales</span>
+                            <br></br>
+                          </span>
+                          <CheckBoxComponent></CheckBoxComponent>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown56 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle72"
+                        >
+                          <span className="company-profile-component-text213">
+                            Marketing
+                          </span>
+                          <CheckBoxComponent></CheckBoxComponent>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown57 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle73"
+                        >
+                          <span className="company-profile-component-text214">
+                            Finance
+                          </span>
+                          <CheckBoxComponent></CheckBoxComponent>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown58 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle74"
+                        >
+                          <span className="company-profile-component-text215">
+                            HR
+                          </span>
+                          <CheckBoxComponent></CheckBoxComponent>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        className="company-profile-component-dropdown59 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          className="company-profile-component-dropdown-toggle75"
+                        >
+                          <span className="company-profile-component-text216">
+                            See all
+                          </span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="company-profile-component-container214">
+              <div className="company-profile-component-container215">
+                <div className="company-profile-component-container216">
+                  <span className="company-profile-component-text217">
+                    Employee list
+                  </span>
+                  <div className="company-profile-component-container217">
+                    <span className="company-profile-component-text218">
                       We´ve found
                     </span>
-                    <span className="company-profile-component-text164">
+                    <span className="company-profile-component-text219">
                       354
                     </span>
-                    <span className="company-profile-component-text165">
+                    <span className="company-profile-component-text220">
+                      Employees
+                    </span>
+                  </div>
+                </div>
+                <div className="company-profile-component-container218">
+                  <div className="btn-white">
+                    <span>Select all</span>
+                  </div>
+                  <div className="btn-white">
+                    <span>Download CSV</span>
+                  </div>
+                </div>
+              </div>
+              <div className="company-profile-component-container221 content-box">
+                <div className="company-profile-component-container222 border-bottom-1px">
+                  <div className="company-profile-component-container223 border-right-1px">
+                    <CheckBoxComponent rootClassName="check-box-component-root-class-name84"></CheckBoxComponent>
+                  </div>
+                  <div className="company-profile-component-container224 border-right-1px">
+                    <span className="company-profile-component-text223">
+                      Name
+                    </span>
+                  </div>
+                  <div className="company-profile-component-container225 border-right-1px">
+                    <span>Locality</span>
+                  </div>
+                  <div className="company-profile-component-container226 border-right-1px">
+                    <span>Position</span>
+                  </div>
+                  <div className="company-profile-component-container227 border-right-1px">
+                    <span>Triggered</span>
+                  </div>
+                  <div className="company-profile-component-container228 border-right-1px">
+                    <span>List</span>
+                  </div>
+                  <div className="company-profile-component-container229">
+                    <span>Scan status</span>
+                  </div>
+                  <div className="company-profile-component-container230"></div>
+                </div>
+                <div className="company-profile-component-container231">
+                  <ul className="list">
+                    <li className="list-item"></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+        {menu_4 && (
+          <div className="company-profile-component-menu4">
+            <div className="company-profile-component-container232">
+              <div className="company-profile-component-container233">
+                <div className="company-profile-component-container234">
+                  <span className="company-profile-component-text229">
+                    LinkedIn Session Cookie
+                  </span>
+                  <div className="company-profile-component-container235">
+                    <span className="company-profile-component-text230">
+                      We´ve found
+                    </span>
+                    <span className="company-profile-component-text231">
+                      354
+                    </span>
+                    <span className="company-profile-component-text232">
                       Cookies
                     </span>
                   </div>
                 </div>
-                <div className="company-profile-component-container190">
+                <div className="company-profile-component-container236">
                   <div className="btn-white">
                     <span>Select all</span>
                   </div>
@@ -1570,34 +2389,41 @@ const CompanyProfileComponent = (props) => {
                   </div>
                 </div>
               </div>
-              <div className="company-profile-component-container193 content-box">
-                <div className="company-profile-component-container194 border-bottom-1px">
-                  <div className="company-profile-component-container195 border-right-1px">
+              <div className="company-profile-component-container239 content-box">
+                <div className="company-profile-component-container240 border-bottom-1px">
+                  <div className="company-profile-component-container241 border-right-1px">
                     <CheckBoxComponent rootClassName="check-box-component-root-class-name81"></CheckBoxComponent>
                   </div>
-                  <div className="company-profile-component-container196 border-right-1px">
-                    <span className="company-profile-component-text168">
+                  <div className="company-profile-component-container242 border-right-1px">
+                    <span className="company-profile-component-text235">
                       Owner
                     </span>
                   </div>
-                  <div className="company-profile-component-container197 border-right-1px">
-                    <span>REQUEST</span>
+                  <div className="company-profile-component-container243 border-right-1px">
+                    <span>Request</span>
                   </div>
-                  <div className="company-profile-component-container198 border-right-1px">
-                    <span>Scan status</span>
+                  <div className="company-profile-component-container244 border-right-1px">
+                    <span>Status</span>
                   </div>
-                  <div className="company-profile-component-container199 border-right-1px">
+                  <div className="company-profile-component-container245 border-right-1px">
                     <span>Last use</span>
                   </div>
-                  <div className="company-profile-component-container200 border-right-1px">
-                    <span>LinkedIn Profile</span>
+                  <div className="company-profile-component-container246 border-right-1px">
+                    <span>
+                      LinkedIn
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
                   </div>
-                  <div className="company-profile-component-container201 border-right-1px">
+                  <div className="company-profile-component-container247 border-right-1px">
                     <span>Session Cookie</span>
                   </div>
-                  <div className="company-profile-component-container202"></div>
+                  <div className="company-profile-component-container248"></div>
                 </div>
-                <div className="company-profile-component-container203">
+                <div className="company-profile-component-container249">
                   <ul className="list">
                     <li className="list-item">
                       <CompanyCookieItem></CompanyCookieItem>
@@ -1629,160 +2455,160 @@ const CompanyProfileComponent = (props) => {
       </div>
       {extra_box && (
         <div className="company-profile-component-extra-box">
-          <div className="company-profile-component-container204 content-box">
+          <div className="company-profile-component-container250 content-box">
             <div className="content-box-topBar">
               <span>{extra_box_txt}</span>
               <div
                 onClick={() => setExtra_box(false)}
-                className="company-profile-component-container206"
+                className="company-profile-component-container252"
               >
                 <svg viewBox="0 0 1024 1024" className="btn-icon">
                   <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
                 </svg>
               </div>
             </div>
-            <div className="company-profile-component-container207">
-              <div className="company-profile-component-container208">
+            <div className="company-profile-component-container253">
+              <div className="company-profile-component-container254">
                 <ul className="list">
-                  <li className="company-profile-component-li14 list-item border-bottom-1px">
-                    <div className="company-profile-component-container209">
-                      <span className="company-profile-component-text175">
+                  <li className="company-profile-component-li13 list-item border-bottom-1px">
+                    <div className="company-profile-component-container255">
+                      <span className="company-profile-component-text242">
                         Sales
                       </span>
                       <CheckBoxComponent rootClassName="check-box-component-root-class-name16"></CheckBoxComponent>
                     </div>
                   </li>
-                  <li className="company-profile-component-li15 list-item border-bottom-1px">
-                    <div className="company-profile-component-container210">
-                      <span className="company-profile-component-text176">
+                  <li className="company-profile-component-li14 list-item border-bottom-1px">
+                    <div className="company-profile-component-container256">
+                      <span className="company-profile-component-text243">
                         Marketing
                       </span>
                       <CheckBoxComponent rootClassName="check-box-component-root-class-name22"></CheckBoxComponent>
                     </div>
                   </li>
-                  <li className="company-profile-component-li16 list-item border-bottom-1px">
-                    <div className="company-profile-component-container211">
-                      <span className="company-profile-component-text177">
+                  <li className="company-profile-component-li15 list-item border-bottom-1px">
+                    <div className="company-profile-component-container257">
+                      <span className="company-profile-component-text244">
                         HR
                       </span>
                       <CheckBoxComponent rootClassName="check-box-component-root-class-name21"></CheckBoxComponent>
                     </div>
                   </li>
-                  <li className="company-profile-component-li17 list-item border-bottom-1px">
-                    <div className="company-profile-component-container212">
-                      <span className="company-profile-component-text178">
+                  <li className="company-profile-component-li16 list-item border-bottom-1px">
+                    <div className="company-profile-component-container258">
+                      <span className="company-profile-component-text245">
                         Legal
                       </span>
                       <CheckBoxComponent rootClassName="check-box-component-root-class-name28"></CheckBoxComponent>
                     </div>
                   </li>
-                  <li className="company-profile-component-li18 list-item border-bottom-1px">
-                    <div className="company-profile-component-container213">
-                      <span className="company-profile-component-text179">
+                  <li className="company-profile-component-li17 list-item border-bottom-1px">
+                    <div className="company-profile-component-container259">
+                      <span className="company-profile-component-text246">
                         Controlling
                       </span>
                       <CheckBoxComponent rootClassName="check-box-component-root-class-name27"></CheckBoxComponent>
                     </div>
                   </li>
-                  <li className="company-profile-component-li19 list-item border-bottom-1px">
-                    <div className="company-profile-component-container214">
-                      <span className="company-profile-component-text180">
+                  <li className="company-profile-component-li18 list-item border-bottom-1px">
+                    <div className="company-profile-component-container260">
+                      <span className="company-profile-component-text247">
                         Compliance
                       </span>
                       <CheckBoxComponent rootClassName="check-box-component-root-class-name26"></CheckBoxComponent>
                     </div>
                   </li>
-                  <li className="company-profile-component-li20 list-item border-bottom-1px">
-                    <div className="company-profile-component-container215">
-                      <span className="company-profile-component-text181">
+                  <li className="company-profile-component-li19 list-item border-bottom-1px">
+                    <div className="company-profile-component-container261">
+                      <span className="company-profile-component-text248">
                         BizDev
                       </span>
                       <CheckBoxComponent rootClassName="check-box-component-root-class-name25"></CheckBoxComponent>
                     </div>
                   </li>
-                  <li className="company-profile-component-li21 list-item border-bottom-1px">
-                    <div className="company-profile-component-container216">
-                      <span className="company-profile-component-text182">
+                  <li className="company-profile-component-li20 list-item border-bottom-1px">
+                    <div className="company-profile-component-container262">
+                      <span className="company-profile-component-text249">
                         Business Intelligence
                       </span>
                       <CheckBoxComponent rootClassName="check-box-component-root-class-name24"></CheckBoxComponent>
                     </div>
                   </li>
-                  <li className="company-profile-component-li22 list-item border-bottom-1px">
-                    <div className="company-profile-component-container217">
-                      <span className="company-profile-component-text183">
+                  <li className="company-profile-component-li21 list-item border-bottom-1px">
+                    <div className="company-profile-component-container263">
+                      <span className="company-profile-component-text250">
                         Customer Care
                       </span>
                       <CheckBoxComponent rootClassName="check-box-component-root-class-name23"></CheckBoxComponent>
                     </div>
                   </li>
-                  <li className="company-profile-component-li23 list-item border-bottom-1px">
-                    <div className="company-profile-component-container218">
-                      <span className="company-profile-component-text184">
+                  <li className="company-profile-component-li22 list-item border-bottom-1px">
+                    <div className="company-profile-component-container264">
+                      <span className="company-profile-component-text251">
                         Customer Office Management
                       </span>
                       <CheckBoxComponent rootClassName="check-box-component-root-class-name29"></CheckBoxComponent>
                     </div>
                   </li>
-                  <li className="company-profile-component-li24 list-item border-bottom-1px">
-                    <div className="company-profile-component-container219">
-                      <span className="company-profile-component-text185">
+                  <li className="company-profile-component-li23 list-item border-bottom-1px">
+                    <div className="company-profile-component-container265">
+                      <span className="company-profile-component-text252">
                         Operations
                       </span>
                       <CheckBoxComponent rootClassName="check-box-component-root-class-name30"></CheckBoxComponent>
                     </div>
                   </li>
-                  <li className="company-profile-component-li25 list-item border-bottom-1px">
-                    <div className="company-profile-component-container220">
-                      <span className="company-profile-component-text186">
+                  <li className="company-profile-component-li24 list-item border-bottom-1px">
+                    <div className="company-profile-component-container266">
+                      <span className="company-profile-component-text253">
                         Partnerships
                       </span>
                       <CheckBoxComponent rootClassName="check-box-component-root-class-name31"></CheckBoxComponent>
                     </div>
                   </li>
-                  <li className="company-profile-component-li26 list-item border-bottom-1px">
-                    <div className="company-profile-component-container221">
-                      <span className="company-profile-component-text187">
+                  <li className="company-profile-component-li25 list-item border-bottom-1px">
+                    <div className="company-profile-component-container267">
+                      <span className="company-profile-component-text254">
                         Account Management
                       </span>
                       <CheckBoxComponent rootClassName="check-box-component-root-class-name32"></CheckBoxComponent>
                     </div>
                   </li>
-                  <li className="company-profile-component-li27 list-item border-bottom-1px">
-                    <div className="company-profile-component-container222">
-                      <span className="company-profile-component-text188">
+                  <li className="company-profile-component-li26 list-item border-bottom-1px">
+                    <div className="company-profile-component-container268">
+                      <span className="company-profile-component-text255">
                         IT
                       </span>
                       <CheckBoxComponent rootClassName="check-box-component-root-class-name33"></CheckBoxComponent>
                     </div>
                   </li>
-                  <li className="company-profile-component-li28 list-item border-bottom-1px">
-                    <div className="company-profile-component-container223">
-                      <span className="company-profile-component-text189">
+                  <li className="company-profile-component-li27 list-item border-bottom-1px">
+                    <div className="company-profile-component-container269">
+                      <span className="company-profile-component-text256">
                         Supply Chain
                       </span>
                       <CheckBoxComponent rootClassName="check-box-component-root-class-name37"></CheckBoxComponent>
                     </div>
                   </li>
-                  <li className="company-profile-component-li29 list-item border-bottom-1px">
-                    <div className="company-profile-component-container224">
-                      <span className="company-profile-component-text190">
+                  <li className="company-profile-component-li28 list-item border-bottom-1px">
+                    <div className="company-profile-component-container270">
+                      <span className="company-profile-component-text257">
                         Project Management
                       </span>
                       <CheckBoxComponent rootClassName="check-box-component-root-class-name36"></CheckBoxComponent>
                     </div>
                   </li>
-                  <li className="company-profile-component-li30 list-item border-bottom-1px">
-                    <div className="company-profile-component-container225">
-                      <span className="company-profile-component-text191">
+                  <li className="company-profile-component-li29 list-item border-bottom-1px">
+                    <div className="company-profile-component-container271">
+                      <span className="company-profile-component-text258">
                         Procurement
                       </span>
                       <CheckBoxComponent rootClassName="check-box-component-root-class-name35"></CheckBoxComponent>
                     </div>
                   </li>
-                  <li className="company-profile-component-li31 list-item border-bottom-1px">
-                    <div className="company-profile-component-container226">
-                      <span className="company-profile-component-text192">
+                  <li className="company-profile-component-li30 list-item border-bottom-1px">
+                    <div className="company-profile-component-container272">
+                      <span className="company-profile-component-text259">
                         Product
                       </span>
                       <CheckBoxComponent rootClassName="check-box-component-root-class-name34"></CheckBoxComponent>
@@ -1791,7 +2617,7 @@ const CompanyProfileComponent = (props) => {
                 </ul>
               </div>
             </div>
-            <div className="company-profile-component-container227 border-top-1px"></div>
+            <div className="company-profile-component-container273 border-top-1px"></div>
           </div>
         </div>
       )}
@@ -1802,11 +2628,11 @@ const CompanyProfileComponent = (props) => {
 CompanyProfileComponent.defaultProps = {
   menu_2: 'Customers',
   menu_1: 'Details',
-  menu_3: 'Cookies',
+  menu_3: 'Employees',
   company: 'HeyData GmbH',
-  menu_4: 'CRM',
   image_src:
     'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDE3fHxwcm9maWxlfGVufDB8fHx8MTY4NjUyMDI0N3ww&ixlib=rb-4.0.3&w=200',
+  menu_4: 'Cookie',
 }
 
 CompanyProfileComponent.propTypes = {
@@ -1814,8 +2640,8 @@ CompanyProfileComponent.propTypes = {
   menu_1: PropTypes.string,
   menu_3: PropTypes.string,
   company: PropTypes.string,
-  menu_4: PropTypes.string,
   image_src: PropTypes.string,
+  menu_4: PropTypes.string,
 }
 
 export default CompanyProfileComponent
